@@ -1,7 +1,7 @@
 import Home from "./component/home";
 import About from "./component/about";
 import Event from "./component/event";
-import Archive from "./component/archive";
+import Committee from "./component/committee";
 import FAQ from "./component/faq";
 import NotFound from "./component/404";
 
@@ -26,9 +26,9 @@ const routes = [
   },
   {
     id: 4,
-    name: "Archives",
-    component: <Archive />,
-    path: "/archive",
+    name: "Our Committee",
+    component: <Committee />,
+    path: "/committee",
   },
   {
     id: 5,

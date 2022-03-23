@@ -1,8 +1,11 @@
 import React from "react";
+
+// Components
 import Navbar from "./component/navbar";
 import Footer from "./component/footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+// Misc
 import routes from "./routes";
 
 function App() {
