@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Misc
 import routes from "./routes";
+import LBManager from "./component/leaderboard_manager";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             />
           );
         })}
+        <Route exact key={5982347} path="/lbmanager" element={<LBManager />} />
       </Routes>
       <Footer />
     </Router>

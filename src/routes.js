@@ -20,15 +20,15 @@ const routes = [
   },
   {
     id: 3,
-    name: "Events",
-    component: <Event />,
-    path: "/event",
-  },
-  {
-    id: 4,
     name: "Our Committee",
     component: <Committee />,
     path: "/committee",
+  },
+  {
+    id: 4,
+    name: "Events",
+    component: <Event />,
+    path: "/event",
   },
   {
     id: 5,
