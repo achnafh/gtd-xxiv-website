@@ -8,17 +8,12 @@ export default function Past(props) {
     <div className="general">
       <div className="past">
         <h1>PAST EVENTS</h1>
-        <div className="past-image">
-          <img src={GTD1} alt="" />
-        </div>
+        <img class="past-image" src={GTD1} alt="" />
+
         <h2>GTD XXII: INSURGIO</h2>
-        <div className="past-image">
-          <img src={GTD2} alt="" />
-        </div>
+        <img class="past-image" src={GTD2} alt="" />
         <h2>GTD XXI: INXXIGNIA</h2>
-        <div className="past-image">
-          <img src={GTD3} alt="" />
-        </div>
+        <img class="past-image" src={GTD3} alt="" />
         <h2>GTD XXII: EXODIA</h2>
       </div>
     </div>

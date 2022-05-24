@@ -9,13 +9,13 @@ export default function about(props) {
         <h1>FOLLOW US ON OUR SOCIALS!</h1>
         <p>
           <img src={linkedin} alt="" />
-          <h2>@pintugtd</h2>
+          <h2>@PINTUGTD</h2>
         </p>
         <p>
           <a href="https://www.instagram.com/pintugtd/?hl=en">
             <img src={instagram} alt="" />
           </a>
-          <h2>@pintugtd</h2>
+          <h2>@PINTUGTD</h2>
         </p>
       </div>
     </div>
