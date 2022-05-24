@@ -7,7 +7,7 @@ export default function Sponsor(props) {
       <div className="sponsor">
         <h2>CHECK OUT OUR SPONSOR</h2>
         <div className="sponsor-image">
-          <img src={sponsor} alt="" />
+          <img src={sponsor} alt="" style={{ height: "100%", width: "100%" }} />
         </div>
       </div>
     </div>
