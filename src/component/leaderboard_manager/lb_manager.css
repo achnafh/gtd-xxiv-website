@@ -1,0 +1,57 @@
+.LB_manager{
+    background-image: url(suicide-squad-typography-hd.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leaderboard_parent{
+    display: flex;
+    justify-content: center;
+    position:relative
+}
+
+.leaderboard_child{
+    width: 80vw;
+    margin: 0 0 0 0 ;
+
+    box-shadow: 
+    0 0 0.1vw  0.25vw #fff7f7,   
+    0 0 0.4vw  0.6vw #00B2FF, 
+    0 0   4vw  0.4vw #82D9FF,
+  
+    inset 0 0 1.5vw  0.4vw #00B2FF,
+    inset 0 0 0.4vw  0.2vw #82D9FF,
+    inset 0 0 0.5vw  0.2vw #fff7f7;
+    border-radius: 0.25rem;
+    
+}
+
+
+
+.leaderboard_child th{
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #95cae2;
+    
+}
+
+.small_img{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.table_img{
+    padding-right: 2vw;
+}
+
+
