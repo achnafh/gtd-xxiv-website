@@ -8,7 +8,6 @@
 *{
     margin :0px;
     padding: 0px;
-    text-align: center;
 }
 
 .about-us{
@@ -99,10 +98,17 @@ background-position:center center;
     .overlay-3>h2{
         font-size : 3em;
     }
-    .overlay-3>h2:before,.overlay>h2::after
+    .overlay-3>h2:before
     {
 
-    width:30%;
+    width:20%;
+
+
+    }
+    .overlay-3>h2:after
+    {
+
+    width:20%;
 
 
     }
@@ -136,7 +142,7 @@ background-position:center center;
 
 .content-about p
 {
-    text-align: justify;
+    text-align: left;
 }
 .content-about hr
 {
@@ -220,8 +226,14 @@ background-position:center center;
 
 
 @media (max-width:768px)
-{   .socials h1{
-    font-size: 3em;
+
+
+{   .content-about
+    {
+        font-size: 1em;
+    }
+    .socials h1{
+    font-size: 2.5em;
     }
     .socials h2{
     font-size: 1.5em;
@@ -231,10 +243,10 @@ background-position:center center;
     height:4em;
     }
     .sponsor>h2{
-    font-size: 3em;
+    font-size: 2.5em;
     }
     .past>h1{
-    font-size: 3em;
+    font-size: 2.5em;
     }
     .past>h2{
     font-size: 2em;
