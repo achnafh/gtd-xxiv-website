@@ -1,0 +1,23 @@
+@import "content.css";
+@import "faq-text.css";
+/*@import "faq-text-border-demo.css";*/
+/*base styles*/
+
+@font-face {
+    font-family: Suicide Squad Font;
+    src: url('./font/SuicideSquadFont-v5jA.ttf');
+}
+
+main{
+    /*width: 200vh;*/
+    /*height: 50vw;*/
+    width: 1512px;
+    height: 1500px;
+
+    background-image: url("./img/suicide-squad-typography-hd 2.png");
+    background-position: center;
+    background-size: 100% auto;
+}
+
+
+

@@ -1,0 +1,16 @@
+main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*width: 1512px;*/
+    /*height: 1500px;*/
+
+    /*background: #F8F8F8;*/
+    background-image: url("./img/suicide-squad-typography-hd 2.png");
+    background-position: center;
+    /*background-clip: content-box;*/
+}
+/*.background img{*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*}*/

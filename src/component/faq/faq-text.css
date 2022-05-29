@@ -1,0 +1,112 @@
+/*FAQ Text*/
+
+/*.faq-text{*/
+/*    position: absolute;*/
+/*}*/
+
+.faq-text p{
+    position: absolute;
+    width: 297px;
+    height: 230px;
+    left: 607.5px;
+    top: 189px;
+
+    font-family: "Suicide Squad Font", monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 230px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.faq-text #one{
+    /*border: 2.19583px solid #FFFFFF;*/
+    filter: blur(0.731944px);
+
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2.19583px;
+}
+
+.faq-text #two{
+    /*border: 4.39167px solid #33E9E9;*/
+    filter: blur(1.09792px);
+
+    -webkit-text-stroke-color: #33E9E9;
+    -webkit-text-stroke-width: 4.39167px;
+}
+
+.faq-text #three{
+    mix-blend-mode: hard-light;
+    /*border: 7.13646px solid rgba(51, 233, 198, 0.2);*/
+    text-shadow: 0px 11.1439px 14.487px #009999, 0px 7.13646px 5.48958px rgba(0, 77, 70, 0.7);
+
+    -webkit-text-stroke-color: rgba(51, 233, 198, 0.2);
+    -webkit-text-stroke-width: 7.13646px;
+}
+
+.faq-text #four{
+    mix-blend-mode: hard-light;
+    /*border: 9.33229px solid #00A8A8;*/
+    filter: blur(11.1439px);
+
+    -webkit-text-stroke-color: #00A8A8;
+    -webkit-text-stroke-width: 9.33229px;
+}
+
+.faq-text #five{
+    mix-blend-mode: hard-light;
+    /*border: 7.13646px solid #00A8A8;*/
+    filter: blur(33.4316px);
+
+    -webkit-text-stroke-color: #00A8A8;
+    -webkit-text-stroke-width: 7.13646px;
+}
+
+.ellipseFaq{
+    position: absolute;
+    width: 356.4px;
+    height: 276px;
+    left: 577.8px;
+    top: 166px;
+
+    background: rgba(51, 233, 198, 0.1015);
+    mix-blend-mode: hard-light;
+    filter: blur(33.4316px);
+}
+
+.rectangleFaq{
+    position: absolute;
+    width: 594px;
+    height: 460px;
+    left: 459px;
+    top: 74px;
+
+    border-radius: 21.9583px;
+
+}
+
+.faq-text #six{
+    /* FAq */
+
+    position: absolute;
+    width: 287px;
+    height: 222px;
+    left: 612px;
+    top: 193px;
+
+    font-family: 'Suicide Squad Font';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 193px;
+    line-height: 222px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,125 @@
+.content-box{
+    position: absolute;
+    width: 1193px;
+    height: 823px;
+    left: 162.5px;
+    top: 498.5px;
+}
+
+.rectangle20{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1193px;
+    height: 823px;
+}
+
+.rectangle20#one{
+    border: 8.4px solid #FFFFFF;
+    filter: blur(2.8px);
+    border-radius: 10px;
+}
+
+.rectangle20#two{
+    border: 16.8px solid #33E9E9;
+    filter: blur(4.2px);
+    border-radius: 10px;
+}
+
+.rectangle20#three{
+    mix-blend-mode: hard-light;
+    border: 27.3px solid rgba(51, 233, 198, 0.2);
+    box-shadow: inset -2.73px 5.46px 2.73px rgba(255, 255, 255, 0.5);
+    filter: drop-shadow(0px 42px 54.6px #009999) drop-shadow(0px 27.3px 21px rgba(0, 77, 70, 0.7));
+    border-radius: 10px;
+}
+
+.rectangle20#four{
+    mix-blend-mode: hard-light;
+    border: 35.7px solid #00A8A8;
+    filter: blur(42px);
+    border-radius: 10px;
+}
+
+.rectangle20#five{
+    mix-blend-mode: hard-light;
+    border: 27.3px solid #00A8A8;
+    filter: blur(126px);
+    border-radius: 10px;
+}
+
+.ellipseContent{
+    position: absolute;
+    width: 1431.6px;
+    height: 987.6px;
+    left: 43.2px;
+    top: 416.2px;
+
+    background: rgba(51, 233, 198, 0.1);
+    mix-blend-mode: hard-light;
+    filter: blur(126px);
+}
+
+.rectangleContent{
+    position: absolute;
+    width: 2386px;
+    height: 1646px;
+    left: -434px;
+    top: 87px;
+
+    border-radius: 84px;
+}
+
+.content-wrapper{
+    padding: 15px;
+    margin: 15px;
+    width: 97%;
+    height: 100%;
+    /*left: 195px;*/
+    /*top: 529px;*/
+}
+
+.content{
+    display: flex;
+}
+
+.content .contact-us p{
+    position: relative;
+    width: 458px;
+    height: 83px;
+    bottom: -20px;
+
+    font-family: 'Suicide Squad Font';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 83px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #000000;
+
+    z-index: 1;
+}
+
+.content .contact-us{
+    /*box-sizing: border-box;*/
+
+    /*position: absolute;*/
+    width: 479px;
+    height: 754px;
+    /*left: 195px;*/
+    /*top: 529px;*/
+
+    background: rgba(65, 233, 202, 0.83);
+    border-radius: 10px;
+}
+
+.content .faq{
+    width: auto;
+    flex-grow: 1;
+}
