@@ -1,4 +1,5 @@
 import React from "react";
+import axios from 'axios'
 
 // Components
 import Navbar from "./component/navbar";
@@ -11,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import routes from "./routes";
 
 function App() {
+  
   return (
     <Router>
       <Navbar />
