@@ -4,10 +4,6 @@ import Title from './Group.png';
 import axios from "axios";
 import { render } from "@testing-library/react";
 
-const api = axios.create({
-  baseURL:"http://gtd-xxiv-website-backend.herokuapp.com/"
-})
-
 export default function LBManager(props) {
   const [data, setData] = React.useState([]);
   const getData = async() => {
@@ -32,6 +28,24 @@ export default function LBManager(props) {
              <th>POINTS</th>
           </tr>
           {OG_row(data)}
+          <tr>
+            <td>9</td>
+            <td>0g 9</td>
+            <td>house 9</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>0g 9</td>
+            <td>house 9</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>0g 9</td>
+            <td>house 9</td>
+            <td>12</td>
+          </tr>
           
         </table>
     </div>
