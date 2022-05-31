@@ -14,6 +14,8 @@ export default function LBManager(props) {
 
   React.useEffect(() => {getData()}, []);
 
+  var hasVScroll = document.body.scrollHeight > document.body.clientHeight;
+
   return (
   <div className="LB_manager">
 
@@ -28,24 +30,8 @@ export default function LBManager(props) {
              <th>POINTS</th>
           </tr>
           {OG_row(data)}
-          <tr>
-            <td>9</td>
-            <td>0g 9</td>
-            <td>house 9</td>
-            <td>12</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>0g 9</td>
-            <td>house 9</td>
-            <td>12</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>0g 9</td>
-            <td>house 9</td>
-            <td>12</td>
-          </tr>
+
+          {console.log(hasVScroll)}
           
         </table>
     </div>
@@ -71,3 +57,4 @@ function OG_row(data){
   </>
   )
 }
+
