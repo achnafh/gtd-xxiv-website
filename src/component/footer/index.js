@@ -27,7 +27,12 @@ export default function Footer(props) {
                   </a>
               </div>
               <div className="box special-thanks">
-                <p>Special thanks to the developer team: GTD IT</p>
+
+                <p className="special-thanks-to">Special thanks to the developer team:</p>
+                <p className="gtd-it">GTD IT</p>
+
+                {/*<p>Special thanks to the developer team: GTD IT</p>*/}
+                {/*<p>Special thanks to the developer team: &nbsp;  <span className="gtd-it"> GTD IT</span></p>*/}
               </div>
           </div>
       </div>

@@ -3,7 +3,6 @@
     src: url("./font/Akshar-Regular.ttf");
 }
 
-
 .footer{
     width: 100vw;
     height: 93px;
@@ -12,34 +11,39 @@
 }
 
 .footer p{
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 0;
+
+    font-family: 'Akshar';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+
 }
 
 .flex-container{
+    height: inherit;
     display: flex;
 }
 
 .box{
     min-width: 100px;
-    height: 100px;
+    height: inherit;
     flex: 1;
     flex-wrap: wrap;
 }
 
 .copyright{
-
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-grow: 4;
 }
 
 .copyright p{
-    font-family: 'Akshar', serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    /*line-height: 26px;*/
-
     color: #FFFFFF;
 }
 
@@ -49,27 +53,154 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-grow: 3;
 }
 
 .image-links img{
+    margin:5px;
 }
 
 .special-thanks{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-grow: 4;
 }
 
 .special-thanks p{
-
-    font-family: 'Akshar';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 26px;
-    display: flex;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
 }
 
+.special-thanks .special-thanks-to{
+    margin-right: 0;
+}
+
+.special-thanks .special-thanks-to::after{
+    content: "\2000";
+}
+
+.special-thanks .gtd-it{
+    margin-left: 0;
+}
+
+/*Rainbow text thing*/
+
+.special-thanks .gtd-it{
+    background: linear-gradient(to right, #FF0000, #DEB522, #3AB826, #214BE0, #A30EEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1444px) {
+    .footer p{
+        margin-bottom: 0;
+
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 570;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .image-links{
+        align-content: center;
+        transform: scale(0.9);
+    }
+
+    .image-links img{
+        scale: 0.8;
+    }
+
+    .image-links img{
+        margin:0;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .footer p{
+        margin-bottom: 0;
+
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 570;
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .image-links{
+        align-content: center;
+    }
+
+    .copyright{
+        flex-grow: 5;
+    }
+
+    .image-links{
+        flex-grow: 2;
+    }
+
+    .special-thanks{
+        flex-grow: 5;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .footer p{
+        margin-bottom: 0;
+
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 570;
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .image-links{
+        align-content: center;
+    }
+
+    .image-links img{
+        scale: 0.6;
+    }
+
+    .copyright{
+        flex-grow: 5;
+    }
+
+    .image-links{
+        flex-grow: 2;
+    }
+
+    .special-thanks{
+        flex-grow: 5;
+    }
+}
+
+@media screen and (max-width: 689px) {
+    .special-thanks .special-thanks-to::after{
+        content: "";
+    }
+    .special-thanks .special-thanks-to{
+        margin-right: 15px;
+    }
+
+    .special-thanks .gtd-it{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .footer p{
+        margin-bottom: 0;
+
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 550;
+        font-size: 13px;
+        line-height: 26px;
+    }
+}
