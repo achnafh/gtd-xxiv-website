@@ -16,14 +16,14 @@ export default function Footer(props) {
                   <p>Copyright © 2021 PINTU & GTD. All Rights Reserved.</p>
               </div>
               <div className="box image-links">
-                  <a href="https://www.google.com/">
-                      <img src={pintuLogo} className="logo pintu-logo" alt="PINTU Logo. Image failed to load." onClick={handleClickPintuLogo}/>
+                  <a href="https://pintusingapura.org/">
+                      <img src={pintuLogo} className="pintu-logo" alt="PINTU Logo." onClick={handleClickPintuLogo}/>
                   </a>
                   <a href="https://sg.linkedin.com/in/pintusg">
-                      <img src={linkedinLogo} className="logo linkedin-logo" alt="Linkedin Logo. Image failed to load."/>
+                      <img src={linkedinLogo} className="linkedin-logo" alt="Linkedin Logo."/>
                   </a>
                   <a href="https://www.instagram.com/pintugram/?hl=en">
-                      <img src={instagramLogo} className="logo instagram-logo" alt="Instagram Logo. Image failed to load."/>
+                      <img src={instagramLogo} className="instagram-logo" alt="Instagram Logo."/>
                   </a>
               </div>
               <div className="box special-thanks">
