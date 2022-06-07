@@ -5,6 +5,7 @@ import Committee from "./component/committee";
 import FAQ from "./component/faq";
 import NotFound from "./component/404";
 import Leaderboard from "./component/leaderboard";
+import Login from "./component/login";
 
 const routes = [
   {
@@ -36,6 +37,12 @@ const routes = [
     name: "FAQ",
     component: <FAQ />,
     path: "/faq",
+  },
+  {
+    id: 7,
+    name: "Login",
+    component: <Login />,
+    path: "/login",
   },
   {
     id: 6,
