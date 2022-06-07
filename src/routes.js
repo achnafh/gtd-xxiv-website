@@ -4,6 +4,7 @@ import Event from "./component/event";
 import Committee from "./component/committee";
 import FAQ from "./component/faq";
 import NotFound from "./component/404";
+import Leaderboard from "./component/leaderboard";
 
 const routes = [
   {
@@ -41,6 +42,12 @@ const routes = [
     name: "404",
     component: <NotFound />,
     path: "*",
+  },
+  {
+    id: 8,
+    name: "Leaderboard",
+    component: <Leaderboard />,
+    path: "/leaderboard",
   },
 ];
 
