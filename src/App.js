@@ -5,10 +5,20 @@ import Navbar from "./component/navbar";
 import Footer from "./component/footer";
 import LBManager from "./component/leaderboard_manager";
 import Scripts from "./scripts";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 // Misc
 import routes from "./routes";
+
+function PrivateRoute({ children }) {
+  const token = localStorage.getItem("token");
+  return token ? children : <Navigate to="/login" />;
+}
 
 function App() {
   return (
@@ -25,7 +35,16 @@ function App() {
             />
           );
         })}
-        <Route exact key={5982347} path="/lbmanager" element={<LBManager />} />
+        <Route
+          exact
+          key={5982347}
+          path="/lbmanager"
+          element={
+            <PrivateRoute>
+              <LBManager />
+            </PrivateRoute>
+          }
+        />
       </Routes>
       <Scripts />
       <Footer />
