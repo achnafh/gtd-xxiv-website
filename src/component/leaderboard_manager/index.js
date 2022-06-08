@@ -3,6 +3,7 @@ import { useNavigate } from "react-router";
 import { AxiosInit } from "../../utils/network";
 import { Button, Spinner } from "react-bootstrap";
 import "./style.css";
+import ErrorModal from "../common/error.modal";
 
 export default function LBManager(props) {
   const navigate = useNavigate();
@@ -11,6 +12,8 @@ export default function LBManager(props) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [editable, setEditable] = useState(false);
+  const [show, setShow] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const og1 = useRef();
   const og2 = useRef();
@@ -37,7 +40,20 @@ export default function LBManager(props) {
     navigate("/login");
   }
 
-  function handleConfirm() {
+  async function handleConfirm() {
+    setLoading(true);
+    for (let i = 0; i < data.length; i++) {} // change data state according to latest input
+    try {
+      const put = await gtdAxios.put(
+        "/",
+        {}, // array of latest data input
+        {
+          headers: { Authorization: "Bearer " + localStorage.getItem("token") },
+        }
+      );
+    } catch (e) {
+      setErrorMessage(e.response.data.message);
+    }
     setEditable(false);
   }
 
@@ -110,6 +126,7 @@ export default function LBManager(props) {
           </table>
         )}
       </div>
+      <ErrorModal show={show} setShow={setShow} message={errorMessage} />
     </div>
   );
 }
