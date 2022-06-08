@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Form, Button, Spinner } from "react-bootstrap";
+import { Form, Button, Spinner, FloatingLabel } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { AxiosInit } from "../../utils/network";
 import ErrorModal from "../common/error.modal";
@@ -39,23 +39,22 @@ export default function Login(props) {
         ) : (
           <></>
         )}
-        <Form>
-          <Form.Group className="mb-3">
-            <Form.Label>Username</Form.Label>
-            <Form.Control
-              placeholder="Enter your username"
-              ref={username}
-            ></Form.Control>
-          </Form.Group>
-          <Form.Group className="mb-3">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
-              placeholder="Enter your password"
-              type="password"
-              ref={password}
-            ></Form.Control>
-          </Form.Group>
-        </Form>
+        <FloatingLabel
+          controlId="floatingInput"
+          label="Username"
+          className="mb"
+        >
+          <Form.Control type="username" placeholder="Username" ref={username} />
+        </FloatingLabel>
+        <div style={{ height: "1%" }} />
+        <FloatingLabel
+          controlId="floatingInput"
+          label="Password"
+          className="mb"
+        >
+          <Form.Control type="password" placeholder="Password" ref={password} />
+        </FloatingLabel>
+        <div style={{ height: "1%" }} />
         <Button onClick={handleSubmit}>Login</Button>
       </div>
       <ErrorModal show={show} setShow={setShow} message={errorMessage} />
