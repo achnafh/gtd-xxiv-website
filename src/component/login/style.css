@@ -11,3 +11,14 @@
   height: 30%;
   justify-content: space-evenly;
 }
+
+.login_overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
