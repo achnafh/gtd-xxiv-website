@@ -66,7 +66,9 @@ export default function LBManager(props) {
   useEffect(() => {
     setLoading(true);
     gtdAxios.get("/").then((res) => {
-      setData(res.data);
+      setData(
+        res.data.sort((first, second) => (first._id > second._id ? 1 : -1))
+      );
       setLoading(false);
     });
   }, []);
