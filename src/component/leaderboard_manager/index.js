@@ -42,18 +42,24 @@ export default function LBManager(props) {
 
   async function handleConfirm() {
     setLoading(true);
-    for (let i = 0; i < data.length; i++) {} // change data state according to latest input
+    let newData = JSON.parse(JSON.stringify(data));
+    for (let i = 0; i < data.length; i++) {
+      newData[i].points = inputs[data[i]._id].current.value;
+    }
     try {
       const put = await gtdAxios.put(
         "/",
-        {}, // array of latest data input
+        { data: newData },
         {
           headers: { Authorization: "Bearer " + localStorage.getItem("token") },
         }
       );
+      setData(put.data);
     } catch (e) {
       setErrorMessage(e.response.data.message);
+      setShow(true);
     }
+    setLoading(false);
     setEditable(false);
   }
 
@@ -116,6 +122,7 @@ export default function LBManager(props) {
                         }
                       }}
                       ref={inputs[value._id]}
+                      min="0"
                     />
                   ) : (
                     value.points
