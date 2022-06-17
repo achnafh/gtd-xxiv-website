@@ -5,7 +5,8 @@ export default function card(props) {
   return (
     <div className="bigimage2">
       <div className="overlay2">
-        <h1>{props.days}</h1>
+        <img className="imageday" src={props.days} alt="" />
+
         <div className="content-event">
           <img class="imgBx" src={props.image1} alt="" />
           <div className="content-event-text">

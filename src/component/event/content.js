@@ -1,9 +1,12 @@
 import Image from "./image/GTD 5.png";
 // import Image2 from "./image/background.png";
+import Day0 from "./image/Day 0.png";
+import Day1 from "./image/Day 1.png";
+import Day2 from "./image/Day 2.png";
 const content = [
   {
     id: 1,
-    days: "DAY 0",
+    days: Day0,
     image1: Image,
     title1: "Escape Room",
     content1:
@@ -15,7 +18,7 @@ const content = [
   },
   {
     id: 2,
-    days: "DAY 1",
+    days: Day1,
     image1: Image,
     title1: "Escape Room",
     content1:
@@ -27,7 +30,7 @@ const content = [
   },
   {
     id: 3,
-    days: "DAY 2",
+    days: Day2,
     image1: Image,
     title1: "Escape Room",
     content1:

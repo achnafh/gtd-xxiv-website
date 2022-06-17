@@ -38,14 +38,12 @@
 }
 
 
-.overlay>h1 {
-    color: rgba(0, 0, 0, 0.5);
-    font-size : 8em;
-    font-family:nos;
-    text-shadow : 0 0 20px #FF1694;
-    text-align: center;
-    margin-top: 15%;
+.overlay>img {
+    width:100%;
+    height: auto;
 }
+
+
 .overlay>h2 {
     display: grid;
     align-items: center;
@@ -88,8 +86,8 @@
 
 @media (max-width:768px)
 {
-    .overlay>h1{
-    font-size : 4.5em;
+    .overlay>img {
+        width:100%;
     }
     .overlay>h2{
         font-size : 2.3em;
@@ -123,28 +121,15 @@
 
     
 }
-/* .overlay
-{
-    display:  flex;
-} */
-.overlay2>h1 {
-    color: rgba(0, 0, 0, 0.5);
-    font-size : 100px;
-    font-family:nos;
-    text-shadow : 0 0 20px #FF1694;
-    text-align: center;
-    margin-top: 5%;
-    /* text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #FF1694,
-      0 0 82px #FF1694,
-      0 0 92px #FF1694,
-      0 0 102px #FF1694,
-      0 0 151px #FF1694; */
-}
 
+.imageday {
+    margin-top: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+}
 
 .content-event
 {
@@ -200,5 +185,14 @@
 .content-event img
 {
     overflow: auto;
+}
+
+.imageday {
+    margin-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
 }
 }
