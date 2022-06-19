@@ -1,16 +1,22 @@
-import React from "react";
-import bg from "./img/suicide-squad-typography-hd 2.png"
+import React, {useState} from "react";
+// import bg from "./img/suicide-squad-typography-hd 2.png"
 import './index.css'
-// import './test.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MyCollapse from "./MyCollapse";
 
 export default function FAQ(props) {
-  return (
+    const [firstBoxOpen, setFirstBoxOpen] = useState(false);
+    const [secondBoxOpen, setSecondBoxOpen] = useState(false);
+    const [thirdBoxOpen, setThirdBoxOpen] = useState(false);
+    const [fourthBoxOpen, setFourthBoxOpen] = useState(false);
+
+    return (
       <main>
           <div className="ellipseFaq"/>
-          <div className="rectangleFaq"/>
+          {/*<div className="rectangleFaq"/>*/}
 
           <div className="ellipseContent" />
-          <div className="rectangleContent" />
+          {/*<div className="rectangleContent" />*/}
 
           <div className="faq-text">
               <p id="one">FAq</p>
@@ -29,27 +35,37 @@ export default function FAQ(props) {
               <div id="five" className="rectangle20"/>
 
 
-              <div className="content-wrapper">
-                  <div className="content">
-                      <div className="contact-us">
-                          <p>CONTACT US</p>
-                          {/*<div className="rectangle15"/>*/}
-                      </div>
+              <div className="content-flex-container">
+                  <div className="content contact-us ">
+                      <p>CONTACT US</p>
+                      {/*<div className="rectangle15"/>*/}
+                  </div>
 
-                      <div className="faq">
-                          <li>
-                              <ul>when will I get paid</ul>
-                              <ul>when will covid end</ul>
-                              <ul>how </ul>
-                              <ul>bangke </ul>
-                          </li>
-                      </div>
+                  <div className="content faq-box">
+                      {/*<div className="boxes-wrapper">*/}
+
+                          <MyCollapse open={firstBoxOpen} setOpen={setFirstBoxOpen} buttonText="Click!" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                labore wes anderson cred nesciunt sapiente ea proident."/>
+
+                          <MyCollapse open={secondBoxOpen} setOpen={setSecondBoxOpen} buttonText="Click!" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                labore wes anderson cred nesciunt sapiente ea proident."/>
+
+                          <MyCollapse open={thirdBoxOpen} setOpen={setThirdBoxOpen} buttonText="Click!" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                labore wes anderson cred nesciunt sapiente ea proident."/>
+
+                          <MyCollapse open={fourthBoxOpen} setOpen={setFourthBoxOpen} buttonText="Click!" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                labore wes anderson cred nesciunt sapiente ea proident."/>
+
+                      {/*</div>*/}
                   </div>
               </div>
-
           </div>
+          {/*<div className="content-box-static-placeholder"/>*/}
+
       </main>
-
-
   )
 }

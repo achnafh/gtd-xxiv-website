@@ -1,17 +1,58 @@
+/*General Content Box*/
+
 .content-box{
     position: absolute;
+    /*width: 1193px;*/
+
     width: 1193px;
     height: 823px;
-    left: 162.5px;
+
+    /*width: 60vw;*/
+    /*height: 80vh;*/
+    left: 50%;
+    transform: translate(-50%);
     top: 498.5px;
+
+    /*margin-top: 30vh;*/
+    /*margin-left: 20vw;*/
+    /*margin-right: 20vw;*/
+
+    /*margin-left: 700px;*/
 }
+
+.content-box-static-placeholder{
+    position: relative;
+    display: block;
+
+    height: 823px;
+
+}
+
+.content-flex-container{
+    padding: 15px;
+    margin: 15px;
+    min-width: 97%;
+    min-height: 97%;
+    height: auto;
+    width: auto;
+    display: flex;
+    /*left: 195px;*/
+    /*top: 529px;*/
+}
+
+.content{
+    flex: 1;
+}
+
+
+/*Content Box Borders*/
 
 .rectangle20{
     box-sizing: border-box;
 
     position: absolute;
-    width: 1193px;
-    height: 823px;
+    width: inherit;
+    height: inherit;
 }
 
 .rectangle20#one{
@@ -50,40 +91,51 @@
 
 .ellipseContent{
     position: absolute;
-    width: 1431.6px;
-    height: 987.6px;
-    left: 43.2px;
-    top: 416.2px;
+    /*width: 1431.6px;*/
+    /*height: 987.6px;*/
 
+    width: 90%;
+    height: 100%;
+
+    left: 50%;
+    transform: translate(-50%);
+    top: 40vh;
+
+    /*background: red;*/
     background: rgba(51, 233, 198, 0.1);
+
     mix-blend-mode: hard-light;
     filter: blur(126px);
 }
 
 .rectangleContent{
     position: absolute;
-    width: 2386px;
-    height: 1646px;
-    left: -434px;
+    width: 1193px;
+    height: 823px;
+    left: 50%;
+    transform: translate(-50%);
     top: 87px;
 
     border-radius: 84px;
 }
 
-.content-wrapper{
-    padding: 15px;
-    margin: 15px;
-    width: 97%;
-    height: 100%;
-    /*left: 195px;*/
-    /*top: 529px;*/
+
+/*Contact Us & google Form*/
+
+.contact-us{
+    /*box-sizing: border-box;*/
+
+    flex-grow: 1;
+
+    /*width: 479px;*/
+    /*height: 754px;*/
+
+    background: rgba(65, 233, 202, 0.83);
+    border-radius: 10px;
+    margin: 5px;
 }
 
-.content{
-    display: flex;
-}
-
-.content .contact-us p{
+.contact-us p{
     position: relative;
     width: 458px;
     height: 83px;
@@ -97,8 +149,8 @@
 
     /* identical to box height */
     display: flex;
-    align-items: center;
-    text-align: center;
+    /*align-items: center;*/
+    /*text-align: center;*/
     justify-content: center;
 
     color: #000000;
@@ -106,20 +158,59 @@
     z-index: 1;
 }
 
-.content .contact-us{
-    /*box-sizing: border-box;*/
 
-    /*position: absolute;*/
-    width: 479px;
-    height: 754px;
-    /*left: 195px;*/
-    /*top: 529px;*/
+/*FAQS*/
 
-    background: rgba(65, 233, 202, 0.83);
-    border-radius: 10px;
-}
-
-.content .faq{
+.faq-box{
+    flex-grow: 2;
     width: auto;
-    flex-grow: 1;
+    background: red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    /*position: relative;*/
 }
+
+.boxes-wrapper{
+    position: relative;
+    flex: 1;
+    flex-flow: column;
+    /*justify-content: space-evenly;*/
+    flex-wrap: nowrap;
+    /*padding: 10px;*/
+    /*max-height: inherit;*/
+
+    /*text-align: center;*/
+    /*left: inherit;*/
+    /*width: 624px;*/
+}
+
+.faq-box Button{
+    /*z-index: 20;*/
+    height:168px;
+    width: 624px;
+
+
+    background: rgba(98, 182, 201, 0.93);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    position: relative;
+
+    z-index: 20;
+}
+
+.collapse-text-general{
+    position: relative;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+}
+

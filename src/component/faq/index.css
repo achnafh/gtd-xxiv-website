@@ -1,6 +1,5 @@
 @import "content.css";
 @import "faq-text.css";
-/*@import "faq-text-border-demo.css";*/
 /*base styles*/
 
 @font-face {
@@ -9,10 +8,13 @@
 }
 
 main{
-    /*width: 200vh;*/
-    /*height: 50vw;*/
-    width: 1512px;
-    height: 1500px;
+    position: static;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    /*height: auto;*/
+
+    /*width: 1512px;*/
+    /*height: 1500px;*/
 
     background-image: url("./img/suicide-squad-typography-hd 2.png");
     background-position: center;
