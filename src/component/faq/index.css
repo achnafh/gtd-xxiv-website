@@ -10,8 +10,9 @@
 main{
     position: static;
     width: 100vw;
-    height: calc(100vh - 100px);
+    /*height: calc(100vh - 100px);*/
     /*height: auto;*/
+    height: 180vh;
 
     /*width: 1512px;*/
     /*height: 1500px;*/

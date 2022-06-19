@@ -5,7 +5,8 @@
     /*width: 1193px;*/
 
     width: 1193px;
-    height: 823px;
+    height: auto;
+    min-height: 823px;
 
     /*width: 60vw;*/
     /*height: 80vh;*/
@@ -52,7 +53,8 @@
 
     position: absolute;
     width: inherit;
-    height: inherit;
+    min-height: inherit;
+    height: 100%;
 }
 
 .rectangle20#one{
@@ -108,16 +110,16 @@
     filter: blur(126px);
 }
 
-.rectangleContent{
-    position: absolute;
-    width: 1193px;
-    height: 823px;
-    left: 50%;
-    transform: translate(-50%);
-    top: 87px;
+/*.rectangleContent{*/
+/*    position: absolute;*/
+/*    width: 1193px;*/
+/*    height: 823px;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%);*/
+/*    top: 87px;*/
 
-    border-radius: 84px;
-}
+/*    border-radius: 84px;*/
+/*}*/
 
 
 /*Contact Us & google Form*/
@@ -163,7 +165,6 @@
 
 .faq-box{
     flex-grow: 2;
-    width: auto;
     background: red;
 
     display: flex;
@@ -171,20 +172,9 @@
     justify-content: space-evenly;
     flex-wrap: nowrap;
     /*position: relative;*/
-}
 
-.boxes-wrapper{
-    position: relative;
-    flex: 1;
-    flex-flow: column;
-    /*justify-content: space-evenly;*/
-    flex-wrap: nowrap;
-    /*padding: 10px;*/
-    /*max-height: inherit;*/
-
-    /*text-align: center;*/
-    /*left: inherit;*/
-    /*width: 624px;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .faq-box Button{
@@ -207,7 +197,12 @@
 
 .collapse-text-general{
     position: relative;
-    margin: 10px;
+    /*margin: 10px;*/
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+
     padding: 8px;
     border-radius: 10px;
     background: white;
