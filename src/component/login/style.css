@@ -1,0 +1,39 @@
+@font-face {
+  font-family: SuicideSquadFont;
+  src: url("../leaderboard/SuicideSquadFont-v5jA.ttf");
+}
+
+.login_container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../leaderboard/suicide-squad-typography-hd.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: SuicideSquadFont;
+}
+
+.login_input_container {
+  height: 30%;
+  justify-content: space-evenly;
+}
+
+.login_overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_title {
+  color: white;
+}

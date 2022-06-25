@@ -1,0 +1,116 @@
+@font-face {
+  font-family: SuicideSquadFont;
+  src: url(SuicideSquadFont-v5jA.ttf);
+}
+
+.leaderboard_manager_container {
+  background-image: url(suicide-squad-typography-hd.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leaderboard_manager_button {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.leaderboard_manager_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4vw;
+}
+
+.leaderboard_manager_child {
+  border-collapse: collapse;
+  width: 80%;
+
+  box-shadow: 0 0 0.1vw 0.25vw #fff7f7, 0 0 0.4vw 0.6vw #00b2ff,
+    0 0 4vw 0.4vw #82d9ff, inset 0 0 1.5vw 0.4vw #00b2ff,
+    inset 0 0 0.4vw 0.2vw #82d9ff, inset 0 0 0.5vw 0.2vw #fff7f7;
+  border-radius: 0.25rem;
+}
+
+.leaderboard_manager_child th {
+  font-size: 4vw;
+  border-bottom: 6px solid #95cae2;
+  padding: 8px;
+  padding-bottom: 0;
+  text-align: center;
+  color: white;
+  font-family: SuicideSquadFont;
+}
+
+.leaderboard_manager_child td {
+  font-size: 3vw;
+  border-bottom: 6px solid #95cae2;
+  padding: 8px;
+  color: white;
+  font-family: SuicideSquadFont;
+  text-align: center;
+}
+
+.leaderboard_manager_child tr:nth-child(even) {
+  background: rgba(149, 202, 226, 0.481);
+}
+.leaderboard_manager_child tr:nth-child(odd):not(:first-child) {
+  background: rgba(0, 178, 255, 0.281);
+}
+
+@media screen and (max-width: 1100px) {
+  .leaderboard_manager_child td {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .leaderboard_manager_container {
+    height: 94vh;
+    width: 101vw;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.leaderboard_manager_no {
+  width: 10%;
+}
+
+.leaderboard_manager_og {
+  width: 30%;
+}
+
+.leaderboard_manager_house {
+  width: 35%;
+}
+
+.leaderboard_manager_points {
+  width: 25%;
+}
+
+.leaderboard_manager_points_input {
+  width: 60%;
+  height: 80%;
+  text-align: center;
+}
