@@ -45,6 +45,7 @@ export default function Login(props) {
         ) : (
           <></>
         )}
+        <h1 className="login_title">Sign In Dulu Ye</h1>
         <FloatingLabel
           controlId="floatingInput"
           label="Username"
@@ -55,6 +56,7 @@ export default function Login(props) {
             placeholder="Username"
             ref={username}
             onKeyDown={handleKeyPress}
+            style={{ fontFamily: "revert" }}
           />
         </FloatingLabel>
         <div style={{ height: "1%" }} />
@@ -68,6 +70,7 @@ export default function Login(props) {
             placeholder="Password"
             ref={password}
             onKeyDown={handleKeyPress}
+            style={{ fontFamily: "revert" }}
           />
         </FloatingLabel>
         <div style={{ height: "1%" }} />
