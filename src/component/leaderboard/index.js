@@ -43,7 +43,7 @@ export default function Leaderboard(props) {
     </div>) : (
     
     <div className="leaderboard_parent">
-    <Spinner animation="grow" variant="info" style={{ width: "4rem", height: "4rem" }}></Spinner>
+    <Spinner animation="border" variant="info" style={{ width: "4rem", height: "4rem" }}></Spinner>
     </div>)}
     
     <Modal show={showModal} onHide={handleClose} backdrop="static" keyboard={false}>
@@ -57,8 +57,6 @@ export default function Leaderboard(props) {
           </Button>
         </Modal.Footer>
       </Modal>
-
-
 
   </div>
   
