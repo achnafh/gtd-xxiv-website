@@ -29,6 +29,12 @@ export default function Login(props) {
     setLoading(false);
   }
 
+  function handleKeyPress(key) {
+    if (key.code === "Enter") {
+      handleSubmit();
+    }
+  }
+
   return (
     <>
       <div className="login_container">
@@ -44,7 +50,12 @@ export default function Login(props) {
           label="Username"
           className="mb"
         >
-          <Form.Control type="username" placeholder="Username" ref={username} />
+          <Form.Control
+            type="username"
+            placeholder="Username"
+            ref={username}
+            onKeyDown={handleKeyPress}
+          />
         </FloatingLabel>
         <div style={{ height: "1%" }} />
         <FloatingLabel
@@ -52,7 +63,12 @@ export default function Login(props) {
           label="Password"
           className="mb"
         >
-          <Form.Control type="password" placeholder="Password" ref={password} />
+          <Form.Control
+            type="password"
+            placeholder="Password"
+            ref={password}
+            onKeyDown={handleKeyPress}
+          />
         </FloatingLabel>
         <div style={{ height: "1%" }} />
         <Button onClick={handleSubmit}>Login</Button>
