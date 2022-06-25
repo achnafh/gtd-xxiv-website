@@ -14,6 +14,7 @@ export default function Leaderboard(props) {
     try{
       const res = await fetch("http://gtd-xxiv-website-backend.herokuapp.com/")
       const og_data = await res.json()
+      og_data.sort( (a,b) => a.points > b.points ? -1 : 1)
       setLoading(true)
       setData(og_data)
     }
@@ -64,7 +65,6 @@ export default function Leaderboard(props) {
 }
 
 function OG_row(data){
-  data.sort( (a,b) => a.points > b.points ? -1 : 1)
   return(
   <>
   {
