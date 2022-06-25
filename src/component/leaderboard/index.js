@@ -3,23 +3,33 @@ import "./leaderboard.css";
 import Title from './Group.png';
 import axios from "axios";
 
+import { Spinner, Modal, Button } from "react-bootstrap";
 
 export default function Leaderboard(props) {
   const [data, setData] = React.useState([]);
+  const [loading, setLoading] = React.useState(false);
+  const [showModal, setShowModal] = React.useState(false);
+  const handleClose = () => setShowModal(false);
   const getData = async() => {
-    const res = await fetch("http://gtd-xxiv-website-backend.herokuapp.com/")
-    const og_data = await res.json()
-    setData(og_data) 
+    try{
+      const res = await fetch("http://gtd-xxiv-website-backend.herokuapp.com/")
+      const og_data = await res.json()
+      setLoading(true)
+      setData(og_data)
+    }
+
+    catch(e){
+      setShowModal(true);
+    }
   }
 
   React.useEffect(() => {getData()}, []);
 
   return (
   <div className="LB_manager">
-
     <img src={Title} className="title"/>
-
-    <div className="leaderboard_parent">
+    
+    {loading ? ( <div className="leaderboard_parent">
         <table className="leaderboard_child">
           <tr>
              <th className="no">NO</th>
@@ -30,7 +40,25 @@ export default function Leaderboard(props) {
           {OG_row(data)}
           
         </table>
-    </div>
+    </div>) : (
+    
+    <div className="leaderboard_parent">
+    <Spinner animation="grow" variant="info" style={{ width: "4rem", height: "4rem" }}></Spinner>
+    </div>)}
+    
+    <Modal show={showModal} onHide={handleClose} backdrop="static" keyboard={false}>
+        <Modal.Header closeButton>
+            <Modal.Title>Error</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>There has been an error when fetching the data. Please try again.</Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+              Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+
 
   </div>
   
@@ -38,6 +66,7 @@ export default function Leaderboard(props) {
 }
 
 function OG_row(data){
+  data.sort( (a,b) => a.points > b.points ? -1 : 1)
   return(
   <>
   {
