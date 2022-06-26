@@ -35,31 +35,25 @@ export default function FAQ(props) {
               <div className="content-flex-container">
                   <div className="content contact-us ">
                       <p>CONTACT US</p>
-                      <div className="iframe-flex-container">
-                          <div className="iframe-box">
-                              <iframe
-                                  src="https://docs.google.com/forms/d/e/1FAIpQLScNYxPSznZ__pjQcU9Y76JW2xwvhr5adEGlH72lqkldVep4HQ/viewform?embedded=true"
-                                  frameBorder="0" marginHeight="0" marginWidth="0" >Loading…
-                              </iframe>
-                          </div>
-                      </div>
                       {/*<div className="rectangle15"/>*/}
                   </div>
 
                   <div className="content faq-box">
                       {/*<div className="boxes-wrapper">*/}
 
-                          <MyCollapse open={firstBoxOpen} setOpen={setFirstBoxOpen} buttonText="click" collapseText="ඞඞඞඞඞඞඞඞඞඞඞ ඞඞඞඞඞ ඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞ! ඞඞඞඞඞඞඞඞඞඞඞඞඞඞ ඞඞඞඞඞ ඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞ! ඞඞඞ ඞඞඞඞඞඞ ඞඞඞ ඞඞ"/>
-
-                          <MyCollapse open={secondBoxOpen} setOpen={setSecondBoxOpen} buttonText="cli" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                          <MyCollapse open={firstBoxOpen} setOpen={setFirstBoxOpen} buttonText="Click!" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
                 terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
                 labore wes anderson cred nesciunt sapiente ea proident."/>
 
-                          <MyCollapse open={thirdBoxOpen} setOpen={setThirdBoxOpen} buttonText="cl" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                          <MyCollapse open={secondBoxOpen} setOpen={setSecondBoxOpen} buttonText="Click!" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
                 terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
                 labore wes anderson cred nesciunt sapiente ea proident."/>
 
-                          <MyCollapse open={fourthBoxOpen} setOpen={setFourthBoxOpen} buttonText="c" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                          <MyCollapse open={thirdBoxOpen} setOpen={setThirdBoxOpen} buttonText="Click!" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                labore wes anderson cred nesciunt sapiente ea proident."/>
+
+                          <MyCollapse open={fourthBoxOpen} setOpen={setFourthBoxOpen} buttonText="Click!" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
                 terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
                 labore wes anderson cred nesciunt sapiente ea proident."/>
 
