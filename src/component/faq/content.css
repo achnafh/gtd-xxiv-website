@@ -127,7 +127,8 @@
 .contact-us{
     /*box-sizing: border-box;*/
 
-    flex-grow: 1;
+    flex-grow: 9;
+    flex-direction: column;
 
     /*width: 479px;*/
     /*height: 754px;*/
@@ -135,13 +136,21 @@
     background: rgba(65, 233, 202, 0.83);
     border-radius: 10px;
     margin: 5px;
+
+    text-align: center;
+    /*justify-content: center;*/
+    align-items: center;
+
+    display: flex;
 }
 
 .contact-us p{
-    position: relative;
+    /*position: relative;*/
     width: 458px;
     height: 83px;
-    bottom: -20px;
+    /*bottom: -20px;*/
+    margin-top: 20px;
+
 
     font-family: 'Suicide Squad Font';
     font-style: normal;
@@ -149,11 +158,9 @@
     font-size: 72px;
     line-height: 83px;
 
-    /* identical to box height */
-    display: flex;
     /*align-items: center;*/
     /*text-align: center;*/
-    justify-content: center;
+    /*justify-content: center;*/
 
     color: #000000;
 
@@ -164,7 +171,7 @@
 /*FAQS*/
 
 .faq-box{
-    flex-grow: 2;
+    flex-grow: 10;
     background: red;
 
     display: flex;
@@ -178,9 +185,10 @@
 }
 
 .faq-box Button{
-    /*z-index: 20;*/
     height:168px;
-    width: 624px;
+    /*width: 624px;*/
+    width: 88%;
+
 
 
     background: rgba(98, 182, 201, 0.93);
@@ -191,17 +199,11 @@
     margin-bottom: 10px;
 
     position: relative;
-
-    z-index: 20;
 }
 
 .collapse-text-general{
     position: relative;
-    /*margin: 10px;*/
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-top: 3px;
+    margin: 6px 6% 12px;
 
     padding: 8px;
     border-radius: 10px;

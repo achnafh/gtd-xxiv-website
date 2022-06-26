@@ -65,7 +65,6 @@ export default function FAQ(props) {
               </div>
           </div>
           {/*<div className="content-box-static-placeholder"/>*/}
-
       </main>
   )
 }
