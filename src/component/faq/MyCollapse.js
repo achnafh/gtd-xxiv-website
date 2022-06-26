@@ -10,6 +10,7 @@ const CollapseOne = ({open, setOpen, buttonText, collapseText}) => {
                     onClick={() => setOpen(!open)}
                     aria-controls="collapse-text-one"
                     aria-expanded={open}
+
                 >
                     {buttonText}
                 </Button>

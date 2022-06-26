@@ -11,11 +11,14 @@ main{
     position: static;
     width: 100vw;
     /*height: calc(100vh - 100px);*/
-    /*height: auto;*/
-    height: 180vh;
+    height: auto;
+    min-height: 120vh;
+
+    padding-bottom: 80px;
 
     /*width: 1512px;*/
     /*height: 1500px;*/
+    /*padding-top: 498.5px;*/
 
     background-image: url("./img/suicide-squad-typography-hd 2.png");
     background-position: center;

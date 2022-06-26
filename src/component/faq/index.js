@@ -12,11 +12,6 @@ export default function FAQ(props) {
 
     return (
       <main>
-          <div className="ellipseFaq"/>
-          {/*<div className="rectangleFaq"/>*/}
-
-          <div className="ellipseContent" />
-          {/*<div className="rectangleContent" />*/}
 
           <div className="faq-text">
               <p id="one">FAq</p>
@@ -25,6 +20,7 @@ export default function FAQ(props) {
               <p id="four">FAq</p>
               <p id="five">FAq</p>
               <p id="six">FAq</p>
+              <div className="ellipseFaq"/>
           </div>
 
           <div className="content-box">
@@ -33,6 +29,7 @@ export default function FAQ(props) {
               <div id="three" className="rectangle20"/>
               <div id="four" className="rectangle20"/>
               <div id="five" className="rectangle20"/>
+              <div className="ellipseContent" />
 
 
               <div className="content-flex-container">
@@ -60,11 +57,10 @@ export default function FAQ(props) {
                 terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
                 labore wes anderson cred nesciunt sapiente ea proident."/>
 
-                      {/*</div>*/}
                   </div>
               </div>
           </div>
-          {/*<div className="content-box-static-placeholder"/>*/}
+
       </main>
   )
 }
