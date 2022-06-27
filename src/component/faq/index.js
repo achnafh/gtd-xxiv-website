@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-// import bg from "./img/suicide-squad-typography-hd 2.png"
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyCollapse from "./MyCollapse";
+
 
 export default function FAQ(props) {
     const [firstBoxOpen, setFirstBoxOpen] = useState(false);
@@ -23,14 +23,16 @@ export default function FAQ(props) {
               <div className="ellipseFaq"/>
           </div>
 
+          {/*<img src={faq} alt="faq"/>*/}
+
           <div className="content-box">
               <div id="one" className="rectangle20"/>
               <div id="two" className="rectangle20"/>
               <div id="three" className="rectangle20"/>
               <div id="four" className="rectangle20"/>
               <div id="five" className="rectangle20"/>
+              <div id="six" className="rectangle20"/>
               <div className="ellipseContent" />
-
 
               <div className="content-flex-container">
                   <div className="content contact-us ">
@@ -59,6 +61,7 @@ export default function FAQ(props) {
 
                   </div>
               </div>
+
           </div>
 
       </main>
