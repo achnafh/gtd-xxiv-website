@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css"
 import pintuLogo from "./img/Pintu Logo.png"
-import linkedinLogo from "./img/LinkedIn logo.png"
-import instagramLogo from "./img/Instagram Logo.png"
+import linkedinLogo from "./img/LinkedIn Logo Simple.png"
+import instagramLogo from "./img/Instagram Logo Simple.png"
 
 export default function Footer(props) {
     const handleClickPintuLogo = () => {

@@ -4,7 +4,7 @@
 }
 
 .footer{
-    width: 100vw;
+    width: auto;
     height: 93px;
     background: #671605;
     margin: 0 auto;
@@ -61,11 +61,27 @@
 .image-links a{
     border-radius: 25px;
     flex: 0 0 auto;
+    transition: background 150ms;
 }
 
 .image-links img{
-    margin:0;
-    scale: 0.8;
+    margin: 10px;
+    /*scale: 0.8;*/
+}
+
+.image-links .pintu-logo{
+    height: 34px;
+    width: auto;
+}
+
+.image-links .instagram-logo{
+    width: auto;
+    height: 34px;
+}
+
+.image-links .linkedin-logo{
+    width: auto;
+    height: 34px;
 }
 
 .image-links a:hover{
@@ -121,7 +137,7 @@
 
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1180px) {
     .footer p{
         font-weight: 570;
         font-size: 15px;
@@ -132,9 +148,9 @@
         align-content: center;
     }
 
-    .image-links img{
-        margin: 0;
-    }
+    /*.image-links img{*/
+    /*    margin: 0;*/
+    /*}*/
 
     .image-links a{
         margin: 0;
@@ -151,7 +167,7 @@
     }
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 895px) {
     .footer p{
         font-weight: 570;
         font-size: 18px;
@@ -166,7 +182,7 @@
     }
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 370px){
     .footer p{
         font-weight: 570;
         font-size: 13px;
