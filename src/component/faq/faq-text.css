@@ -13,9 +13,11 @@
     width: 297px;
     height: calc(240px * 2);
 
-    left: 50%;
+    margin: auto;
+
+    /*left: 50%;*/
     /*transform: translate(-50%) scale(95%);*/
-    transform: translate(-50%);
+    /*transform: translate(-50%);*/
     scale: 110%;
 }
 
