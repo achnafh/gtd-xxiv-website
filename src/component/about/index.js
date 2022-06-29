@@ -11,6 +11,7 @@ function createEntry2(value) {
   return (
     <Past
       id={value.id}
+      title={value.title}
       image={value.image}
       flip={value.flip}
       name={value.name}

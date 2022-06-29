@@ -5,7 +5,7 @@ export default function Past(props) {
   return (
     <div className="general">
       <div className="past">
-        <h1>PAST EVENTS</h1>
+        <h1>{props.title}</h1>
         <div class="fullwrap">
           <img class="past-image" src={props.image} alt="" />
           <div class="fullcap">
