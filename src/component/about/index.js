@@ -5,6 +5,19 @@ import Content from "./content.js";
 import Socials from "./socials.js";
 import Sponsor from "./sponsor.js";
 import Past from "./past-events.js";
+import card from "./events-content.js";
+
+function createEntry2(value) {
+  return (
+    <Past
+      id={value.id}
+      image={value.image}
+      flip={value.flip}
+      name={value.name}
+    />
+  );
+}
+
 export default function About(props) {
   return (
     <>
@@ -12,7 +25,7 @@ export default function About(props) {
       <Content />
       <Socials />
       <Sponsor />
-      <Past />
+      {card.map(createEntry2)}
     </>
   );
 }

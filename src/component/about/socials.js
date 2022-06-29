@@ -7,11 +7,16 @@ export default function about(props) {
     <div className="general">
       <div className="socials">
         <h1>FOLLOW US ON OUR SOCIALS!</h1>
-        <img src={linkedin} alt="" />
-        {/* <h2>@PINTUGTD</h2> */}
-        <a href="https://www.instagram.com/pintugtd/?hl=en">
-          <img src={instagram} alt="" />
-        </a>
+        <div className="list_socials">
+          <div className="linkedin">
+            <img src={linkedin} alt="" />
+          </div>
+          <div className="instagram">
+            <a href="https://www.instagram.com/pintugtd/?hl=en">
+              <img src={instagram} alt="" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

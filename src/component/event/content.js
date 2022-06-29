@@ -1,5 +1,4 @@
 import Image from "./image/GTD 5.png";
-// import Image2 from "./image/background.png";
 import Day0 from "./image/Day 0.png";
 import Day1 from "./image/Day 1.png";
 import Day2 from "./image/Day 2.png";
