@@ -6,16 +6,7 @@ import content from "./content.js";
 
 function createEntry(cardValue) {
   return (
-    <Card
-      id={cardValue.id}
-      days={cardValue.days}
-      image1={cardValue.image1}
-      title1={cardValue.title1}
-      content1={cardValue.content1}
-      image2={cardValue.image2}
-      title2={cardValue.title2}
-      content2={cardValue.content2}
-    />
+    <Card id={cardValue.id} days={cardValue.days} const={cardValue.content} />
   );
 }
 
