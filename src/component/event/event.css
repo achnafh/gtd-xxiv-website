@@ -1,199 +1,179 @@
 @font-face {
-    font-family: nos;
-    src: url(Suicide\ Squad\ Font.ttf);
+  font-family: nos;
+  src: url(Suicide\ Squad\ Font.ttf);
 }
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-*{
-    margin :0px;
-    padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.bigimage{
-    background-image: url("image/background.png");
-    background-repeat: no-repeat;
-    position: relative; 
-    object-fit : cover;
-    width : 100%;
-    height :100vh;
-    z-index : -0.5;
-    display : flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: auto;
-background-position:center center;
+.bigimage {
+  background-image: url("image/background.png");
+  background-repeat: no-repeat;
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -0.5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: auto;
+  background-position: center center;
 }
-.overlay{
+.overlay {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.overlay > img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay > h2 {
+  display: grid;
+  align-items: center;
+  color: white;
+  font-size: 5em;
+  margin-top: 100px;
+  font-family: nos;
+  text-align: center;
+  height: 0.5em;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: visible;
+}
+.overlay > h2:before,
+.overlay > h2::after {
+  background: white;
+  height: 4px;
+  content: "";
+  z-index: -0.5;
+  top: 100%;
+  width: 30%;
+  position: absolute;
+  border-radius: 2px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.overlay > h2::after {
+  left: 0;
+}
+
+.overlay > h2::before {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .overlay > img {
     width: 100%;
-    height: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+  }
+  .overlay > h2 {
+    font-size: 2.3em;
+  }
+  .overlay > h2:before {
+    width: 20%;
+  }
+  .overlay > h2:after {
+    width: 20%;
+  }
 }
 
-
-.overlay>img {
-    width:100%;
-    height: auto;
-    
-}
-
-
-.overlay>h2 {
-    display: grid;
-    align-items: center;
-    color : white;
-    font-size :5em;
-    margin-top:  100px;
-    font-family:nos;
-    text-align: center; 
-    height: 0.5em; 
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    overflow: visible;
-}
-.overlay>h2:before,.overlay>h2::after
-{
-    background: white;
-    height: 4px;
-    content: '';
-    z-index: -0.5;
-    top: 100%;
-    width:30%;
-    position: absolute;
-    border-radius: 2px;
-    margin-left: 2%;
-    margin-right:2%
-
-
-}
-
-
-.overlay>h2::after
-{
-    left:0;
-}
-
-.overlay>h2::before
-{
-    right:0;
-} 
-
-@media (max-width:768px)
-{
-    .overlay>img {
-        width:100%;
-    }  
-    .overlay>h2{
-        font-size : 2.3em;
-    }
-    .overlay>h2:before
-    {
-
-    width:20%;
-    }
-    .overlay>h2:after
-    {
-    width:20%;
-    }
-}
-
-.bigimage2{
-    background-image:url("image/hahaha.png");
-    background-position: center center; 
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    font-family:nos;
-    font-size: 100%;    
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    width : 100%;
-
+.bigimage2 {
+  background-image: url("image/hahaha.png");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-family: nos;
+  font-size: 100%;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  width: 100%;
 }
 
 .imageday {
-    margin-top: 0%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-
+  margin-top: 0%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
-.content-event
-{
-    display:  flex;
-    flex-direction: row;
-    
-
+.content-event {
+  display: flex;
+  flex-direction: column;
 }
 
-.content-event img
-{
-    height:auto;
-    max-width : 100%;
-    /* margin-left: 2%;
+.content-event-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-event img {
+  height: auto;
+  max-width: 100%;
+  /* margin-left: 2%;
     margin-right: 2%; */
 }
-.content-event-text h2
-{
-    font-family: 'Abel', sans-serif;
-    color: white;
-    font-size: 3em;
-    text-align :left;
-    padding-left: 5%;
+.content-event-text h2 {
+  font-family: "Abel", sans-serif;
+  color: white;
+  font-size: 3em;
+  text-align: left;
+  padding-left: 5%;
 }
-.content-event-text p
-{
-    padding-right:5% ;
-    padding-left: 5%;
-    font-family: 'Abel', sans-serif;
-    color: white;
-    text-align :justify;
+.content-event-text p {
+  padding-right: 5%;
+  padding-left: 5%;
+  font-family: "Abel", sans-serif;
+  color: white;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .overlay2 > h1 {
+    font-size: 2.6em;
+  }
+
+  .content-event-text h2 {
     font-size: 1.5em;
-}
-
-@media (max-width:768px)
-{
-    .overlay2>h1 {
-        font-size: 2.6em;
-    }
-
-    .content-event-text h2
-{
-
-    font-size: 1.5em;
-
-}
-.content-event-text p
-{
+  }
+  .content-event-text p {
     font-size: 1em;
-}
-.content-event
-{
+  }
+  .content-event {
     display: block;
-}
-.content-event img
-{
+  }
+  .content-event-card {
+    flex-direction: column;
+  }
+  .content-event img {
     overflow: auto;
-}
+  }
 
-.imageday {
+  .imageday {
     margin-top: 5%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-
-}
+  }
 }
