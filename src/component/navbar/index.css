@@ -1,0 +1,12 @@
+.navbar-light {
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(247, 0, 0, 0.079);
+box-shadow: inset 54.1667px -54.1667px 54.1667px rgba(187, 0, 0, 0.079), inset -54.1667px 54.1667px 54.1667px rgba(255, 255, 255, 0.079);
+backdrop-filter: blur(62.8333px);
+/* Note: backdrop-filter has minimal browser support */
+}
