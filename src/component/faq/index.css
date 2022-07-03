@@ -8,30 +8,17 @@
 
 main{
     position: static;
-    /*width: 100vw;*/
-    /*height: calc(100vh - 100px);*/
+
     height: auto;
-    /*min-height: 1vh;*/
-
-    /*padding-bottom: 80px;*/
-
-    /*width: 1512px;*/
-    /*height: 1500px;*/
-    /*padding-top: 498.5px;*/
 
     background-image: url("./img/suicide-squad-typography-hd 2.png");
     background-position: center;
     background-size: 100% auto;
-
 }
-
 
 #faq-text{
     position: relative;
     display: block;
-
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
 
     margin-left: auto;
     margin-right: auto;
