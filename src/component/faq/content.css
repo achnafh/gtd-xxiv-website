@@ -12,7 +12,7 @@
     min-height: 823px;
 
     margin: auto;
-    scale: 0.9;
+    transform: scale(0.9);
     top: -120px;
 
     border-radius: 10px;
@@ -161,6 +161,8 @@
     align-items: center;
     justify-content: center;
 
+    flex-grow: 3;
+
     color: black;
     font-family: "Suicide Squad Font", serif;
     font-style: normal;
@@ -170,17 +172,15 @@
 }
 
 .faq-box .triangle-container{
-    max-width: 20%;
+    position: relative;
+    /*max-width: 20%;*/
+    flex-grow: 1;
     align-items: center;
     justify-content: center;
 }
 
 .faq-box .triangle{
     position: relative;
-    z-index: 0;
-
-    /*controls triangle position*/
-
     transition: 250ms;
 }
 
@@ -334,7 +334,8 @@
     }
 
     .faq-box .triangle{
-        scale: 0.8;
+        width: 40%;
+        height: auto;
     }
 }
 
@@ -383,10 +384,6 @@
     .content-box{
         padding-bottom: 10px;
     }
-
-    .faq-box .triangle{
-        scale: 0.7;
-    }
 }
 
 @media screen and (max-width: 420px) {
@@ -411,9 +408,6 @@
         margin-top: 12px;
     }
 
-    .faq-box .triangle{
-        scale: 0.6;
-    }
 
 }
 
@@ -425,7 +419,7 @@
         padding-bottom: 10px;
     }
     .contact-us{
-        margin-top: 25px;
+        margin-top: 22px;
     }
     .faq-box .button-text{
         padding: 5px;
