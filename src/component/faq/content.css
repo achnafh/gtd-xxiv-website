@@ -164,6 +164,12 @@
 
     /*padding-top: 10px;*/
     /*padding-bottom: 10px;*/
+
+}
+
+.faq-box-scroll-container{
+    max-height: 790px;
+    overflow-y: scroll;
 }
 
 .faq-box Button{
@@ -190,7 +196,7 @@
 
     padding-right: 152px;
 
-    transition: transform 250ms;
+    transition: transform 250ms !important;
 }
 
 .faq-box img{

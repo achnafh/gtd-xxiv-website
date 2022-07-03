@@ -42,6 +42,9 @@ export default function FAQ(props) {
                   </div>
 
                   <div className="content faq-box">
+                      <div className="faq-box-scroll-container">
+                          {/*workaround otherwise it lags*/}
+                          {/*settings can be found on content.css*/}
 
                           <MyCollapse open={firstBoxOpen} setOpen={setFirstBoxOpen} buttonText="click" collapseText="ඞඞඞඞඞඞඞඞඞඞඞ ඞඞඞඞඞ ඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞ! ඞඞඞඞඞඞඞඞඞඞඞඞඞඞ ඞඞඞඞඞ ඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞ! ඞඞඞ ඞඞඞඞඞඞ ඞඞඞ ඞඞ"/>
 
@@ -57,6 +60,11 @@ export default function FAQ(props) {
                 terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
                 labore wes anderson cred nesciunt sapiente ea proident."/>
 
+                {/*          <MyCollapse open={fourthBoxOpen} setOpen={setFourthBoxOpen} buttonText="c" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus*/}
+                {/*terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer*/}
+                {/*labore wes anderson cred nesciunt sapiente ea proident."/>*/}
+
+                      </div>
                   </div>
               </div>
 
