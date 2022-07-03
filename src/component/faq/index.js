@@ -46,7 +46,7 @@ export default function FAQ(props) {
                           {/*workaround otherwise it lags*/}
                           {/*settings can be found on content.css*/}
 
-                          <MyCollapse open={firstBoxOpen} setOpen={setFirstBoxOpen} buttonText="click" collapseText="ඞඞඞඞඞඞඞඞඞඞඞ ඞඞඞඞඞ ඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞ! ඞඞඞඞඞඞඞඞඞඞඞඞඞඞ ඞඞඞඞඞ ඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞ! ඞඞඞ ඞඞඞඞඞඞ ඞඞඞ ඞඞ"/>
+                          <MyCollapse open={firstBoxOpen} setOpen={setFirstBoxOpen} buttonText="Apakah apakah apakah asd asd" collapseText="ඞඞඞඞඞඞඞඞඞඞඞ ඞඞඞඞඞ ඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞ! ඞඞඞඞඞඞඞඞඞඞඞඞඞඞ ඞඞඞඞඞ ඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞඞ ඞඞඞඞඞ! ඞඞඞ ඞඞඞඞඞඞ ඞඞඞ ඞඞ"/>
 
                           <MyCollapse open={secondBoxOpen} setOpen={setSecondBoxOpen} buttonText="cli" collapseText="Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
                 terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
