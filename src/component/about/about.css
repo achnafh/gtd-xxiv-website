@@ -42,11 +42,12 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding: 100px;
 }
 
 .overlay-3 > img {
   width: 100%;
-  height: auto;
+
 }
 /* .text>img {
     margin-top: 5%;
