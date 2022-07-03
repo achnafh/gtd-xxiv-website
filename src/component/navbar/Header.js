@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   AppBar,
   Button,
@@ -20,6 +21,7 @@ const LinkTab = (props) => {
       onClick={(event) => {
         event.preventDefault();
       }}
+      containerElement={<Link to={props.page} />}
       {...props}
     />
   );
@@ -51,7 +53,7 @@ const Header = () => {
                 value={value}
                 onChange={(e, value) => setValue(value)}
               >
-                <LinkTab label="HOME" href="/home" />
+                <LinkTab label="HOME" page="/home" />
                 <LinkTab label="ABOUT US" href="/about" />
                 <LinkTab label="OUR COMMITTEE" href="/committee" />
                 <LinkTab label="EVENTS" href="/event" />
