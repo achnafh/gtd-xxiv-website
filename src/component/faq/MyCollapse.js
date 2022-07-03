@@ -1,7 +1,7 @@
 import {Button, Collapse} from "react-bootstrap";
 import triangle from "./img/triangle.png";
 
-const CollapseOne = ({open, setOpen, buttonText, collapseText}) => {
+const MyCollapse = ({open, setOpen, buttonText, collapseText}) => {
     return (
         <>
             <div className="collapse-container">
@@ -9,14 +9,15 @@ const CollapseOne = ({open, setOpen, buttonText, collapseText}) => {
                     <Button
                         variant="primary"
                         size="lg"
-                        onClick={() => setOpen(!open)}
+                        onClick={() => {
+                            setOpen(!open);
+                        }}
                         aria-controls="collapse-text-one"
                         aria-expanded={open}
-
                     >
                         {buttonText}
 
-                        <img src={triangle} alt=""/>
+                        <img src={triangle} alt="" className={"triangle" + (open ? " active" : "")}/>
                     </Button>
                 </div>
             </div>
@@ -31,4 +32,4 @@ const CollapseOne = ({open, setOpen, buttonText, collapseText}) => {
     );
 }
 
-export default CollapseOne
+export default MyCollapse

@@ -199,7 +199,7 @@
     transition: transform 250ms !important;
 }
 
-.faq-box img{
+.faq-box .triangle{
     position: absolute;
     z-index: 0;
 
@@ -210,6 +210,15 @@
 
     top: 50%;
     transform: translateY(-50%);
+
+    transition: 250ms;
+}
+
+.faq-box .triangle.active{
+    transform: rotate(180deg);
+    transform-origin: 50% 20%;
+    /*transform-origin: top;*/
+    transition: 250ms;
 }
 
 .faq-box .collapse-container{
