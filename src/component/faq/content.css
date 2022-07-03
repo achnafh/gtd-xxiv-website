@@ -117,6 +117,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: nowrap;
+    padding-right: 20px;
 }
 
 .faq-box-scroll-container{
@@ -133,8 +134,10 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
-    margin-top: 15px;
 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
     /*already a built in bottom margin: 8px,*/
     margin-bottom: 7px;
 
@@ -145,29 +148,41 @@
     font-size: 36px;
     line-height: 41px;
 
-    padding-right: 152px;
-
     transition: transform 250ms !important;
 }
 
+.faq-box .button-component-container{
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.faq-box .button-component{
+    flex: 1;
+}
+
+.faq-box .button-text{
+    padding: 15px;
+}
+
+.faq-box .triangle-container{
+    max-width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
 .faq-box .triangle{
-    position: absolute;
+    position: relative;
     z-index: 0;
 
-    left:0;
     /*controls triangle position*/
-    right:45px;
-    margin-left:auto;
-
-    top: 50%;
-    transform: translateY(-50%);
 
     transition: 250ms;
 }
 
 .faq-box .triangle.active{
     transform: rotate(180deg);
-    transform-origin: 50% 20%;
+    transform-origin: 50% 40%;
     transition: 250ms;
 }
 
@@ -196,7 +211,7 @@
 
 .collapse-text-general{
     position: relative;
-    margin: 8px 4% 8px;
+    margin: 15px 4% 8px;
 
     padding: 8px 12px 8px;
     border-radius: 10px;
@@ -227,7 +242,11 @@
         width: 94%;
         padding-left: 0;
         padding-right: 0;
+    }
 
+    .faq-box-scroll-container{
+        max-height: none;
+        overflow-y: hidden;
     }
 
     .content-flex-container{
@@ -263,6 +282,7 @@
 
     .faq-box{
         position: relative;
+        padding-right: 0;
     }
 
     .collapse-container{
@@ -285,7 +305,6 @@
     .faq-box Button{
         margin-top: 10px;
         margin-bottom: 2px;
-        padding-right: 130px;
     }
 
     .contact-us{
@@ -293,10 +312,18 @@
         margin-top: 25px;
     }
 
+    .content-box{
+        box-shadow:
+                0 0 7.8px 5.4px #FFFFFF, /* white border */
+                inset 0 0 7.8px 2.4px #FFFFFF, /* white border inset */
+                0 0 10.8px 7px #23f6f6,  /* light-blue extends a bit from white */
+                inset 0 0 10.8px 10px #23f6f6, /* light-blue inset */
+                0 0 180px 36px rgba(0, 168, 168, 1), /* large blue glow */
+                inset 0 0 80px 16px rgba(0, 168, 168, 0.8); /* large blue glow inset*/
+    }
+
     .faq-box .triangle{
         scale: 80%;
-        top: 80px;
-        right: 36px;
     }
 }
 
@@ -323,7 +350,6 @@
         margin-bottom: 0;
         font-size: 30px;
         line-height: 36px;
-        padding-right: 110px;
     }
     .contact-us{
         margin-top: 16px;
@@ -335,8 +361,6 @@
 
     .faq-box .triangle{
         scale: 70%;
-        top: 76px;
-        right: 23px;
     }
 }
 
@@ -348,8 +372,6 @@
     .faq-box Button{
         margin-top: 4px;
         margin-bottom: 0;
-        padding-right: 90px;
-
     }
 
     .collapse-text-general{
@@ -363,8 +385,6 @@
 
     .faq-box .triangle{
         scale: 60%;
-        top: 76px;
-        right: 14px;
     }
 }
 

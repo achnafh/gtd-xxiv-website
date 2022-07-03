@@ -15,9 +15,13 @@ const MyCollapse = ({open, setOpen, buttonText, collapseText}) => {
                         aria-controls="collapse-text-one"
                         aria-expanded={open}
                     >
-                        {buttonText}
+                        <div className="button-component-container">
+                            <p className="button-component button-text">{buttonText}</p>
 
-                        <img src={triangle} alt="" className={"triangle" + (open ? " active" : "")}/>
+                            <div className="button-component triangle-container">
+                                <img src={triangle} alt="" className={"triangle" + (open ? " active" : "")}/>
+                            </div>
+                        </div>
                     </Button>
                 </div>
             </div>
