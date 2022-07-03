@@ -12,7 +12,7 @@
     min-height: 823px;
 
     margin: auto;
-    scale: 90%;
+    scale: 0.9;
     top: -120px;
 
     border-radius: 10px;
@@ -323,7 +323,7 @@
     }
 
     .faq-box .triangle{
-        scale: 80%;
+        scale: 0.8;
     }
 }
 
@@ -333,6 +333,10 @@
     }
     .contact-us{
         margin-top: 18px;
+    }
+
+    .faq-box Button{
+        height: 150px;
     }
 
     .collapse-text-general{
@@ -360,7 +364,7 @@
     }
 
     .faq-box .triangle{
-        scale: 70%;
+        scale: 0.7;
     }
 }
 
@@ -372,20 +376,19 @@
     .faq-box Button{
         margin-top: 4px;
         margin-bottom: 0;
+        height: 130px;
+        font-size: 26px;
+        line-height: 33px;
     }
 
     .collapse-text-general{
         margin-top: 12px;
     }
 
-    .faq-box Button{
-        font-size: 28px;
-        line-height: 33px;
+    .faq-box .triangle{
+        scale: 0.6;
     }
 
-    .faq-box .triangle{
-        scale: 60%;
-    }
 }
 
 @media screen and (max-width: 370px ){

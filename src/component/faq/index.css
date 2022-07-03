@@ -31,13 +31,13 @@ main{
 
 @media screen and (max-width: 1550px){
     #faq-text{
-        scale: 88%;
+        scale: 0.88;
     }
 }
 
 @media screen and (max-width: 1380px){
     #faq-text{
-        scale: 80%;
+        scale: 0.8;
     }
 }
 
@@ -56,7 +56,7 @@ main{
 
 @media screen and (max-width: 730px) {
     #faq-text{
-        scale: 66%;
+        scale: 0.66;
     }
 }
 
