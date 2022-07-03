@@ -126,27 +126,20 @@
 }
 
 .faq-box Button{
-    height:168px;
+    height:auto;
+
+    min-height:168px;
     position: relative;
     width: 92%;
+    max-width: 92%;
 
     background: rgba(98, 182, 201, 0.93);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
     /*already a built in bottom margin: 8px,*/
-    margin-bottom: 7px;
-
-    color: black;
-    font-family: "Suicide Squad Font", serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 41px;
+    margin: 15px auto 7px;
 
     transition: transform 250ms !important;
 }
@@ -163,6 +156,17 @@
 
 .faq-box .button-text{
     padding: 15px;
+    margin-bottom: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+    font-family: "Suicide Squad Font", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
 }
 
 .faq-box .triangle-container{
@@ -182,12 +186,16 @@
 
 .faq-box .triangle.active{
     transform: rotate(180deg);
-    transform-origin: 50% 40%;
+    transform-origin: 50% 48%;
     transition: 250ms;
 }
 
 .faq-box .collapse-container{
     position: relative;
+}
+
+.faq-box .btn.btn-primary.btn-lg{
+    padding: 0;
 }
 
 .faq-box Button:hover{
@@ -293,6 +301,9 @@
         margin-top: 15px;
     }
 
+    .faq-box Button{
+    }
+
 
 }
 
@@ -336,7 +347,8 @@
     }
 
     .faq-box Button{
-        height: 150px;
+        min-height: 150px;
+        height: auto;
     }
 
     .collapse-text-general{
@@ -352,9 +364,18 @@
     .faq-box Button{
         margin-top: 8px;
         margin-bottom: 0;
+    }
+
+    .faq-box .button-text{
         font-size: 30px;
         line-height: 36px;
     }
+
+    .faq-box Button{
+        height: auto;
+        min-height: 120px;
+    }
+
     .contact-us{
         margin-top: 16px;
     }
@@ -376,9 +397,14 @@
     .faq-box Button{
         margin-top: 4px;
         margin-bottom: 0;
-        height: 130px;
+        min-height: 100px;
+        height: auto;
+    }
+
+    .faq-box .button-text{
         font-size: 26px;
         line-height: 33px;
+        padding: 8px;
     }
 
     .collapse-text-general{
@@ -401,7 +427,8 @@
     .contact-us{
         margin-top: 25px;
     }
-    .faq-box Button{
+    .faq-box .button-text{
+        padding: 5px;
         font-size: 24px;
         line-height: 30px;
     }
