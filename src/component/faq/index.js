@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyCollapse from "./MyCollapse";
+import faqText from './img/FAQ.png';
 
 
 export default function FAQ(props) {
@@ -13,26 +14,19 @@ export default function FAQ(props) {
     return (
       <main>
 
-          <div className="faq-text">
-              <p id="one">FAq</p>
-              <p id="two">FAq</p>
-              <p id="three">FAq</p>
-              <p id="four">FAq</p>
-              <p id="five">FAq</p>
-              <p id="six">FAq</p>
-              <div className="ellipseFaq"/>
-          </div>
+          {/*<div className="faq-text">*/}
+          {/*    <p id="one">FAq</p>*/}
+          {/*    <p id="two">FAq</p>*/}
+          {/*    <p id="three">FAq</p>*/}
+          {/*    <p id="four">FAq</p>*/}
+          {/*    <p id="five">FAq</p>*/}
+          {/*    <p id="six">FAq</p>*/}
+          {/*    <div className="ellipseFaq"/>*/}
+          {/*</div>*/}
 
-          {/*<img src={faq} alt="faq"/>*/}
+          <img id="faq-text" src={faqText} alt="faq"/>
 
           <div className="content-box">
-              <div id="one" className="rectangle20"/>
-              <div id="two" className="rectangle20"/>
-              <div id="three" className="rectangle20"/>
-              <div id="four" className="rectangle20"/>
-              <div id="five" className="rectangle20"/>
-              <div id="six" className="rectangle20"/>
-              <div className="ellipseContent" />
 
               <div className="content-flex-container">
                   <div className="content contact-us ">

@@ -1,5 +1,4 @@
 @import "content.css";
-@import "faq-text.css";
 /*base styles*/
 
 @font-face {
@@ -12,9 +11,9 @@ main{
     /*width: 100vw;*/
     /*height: calc(100vh - 100px);*/
     height: auto;
-    min-height: 153vh;
+    /*min-height: 1vh;*/
 
-    padding-bottom: 80px;
+    /*padding-bottom: 80px;*/
 
     /*width: 1512px;*/
     /*height: 1500px;*/
@@ -26,6 +25,17 @@ main{
 
 }
 
+
+#faq-text{
+    position: relative;
+    display: block;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 600px;
+    object-fit: none;
+}
 /*@media screen and (max-width: 1355px){*/
 /*    main{*/
 /*        min-height: 400vh;*/
