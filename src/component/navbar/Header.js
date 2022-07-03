@@ -10,7 +10,7 @@ import {
   useTheme,
 } from "@mui/material";
 import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
-import "./navbar.css";
+import DrawerComp from "./DrawerComp";
 import gtdlogo from "./images/gtdlogo.svg";
 
 const LinkTab = (props) => {
@@ -29,35 +29,24 @@ const Header = () => {
   const [value, setValue] = useState();
   const theme = useTheme();
   console.log(theme);
-  const isMatch = useMediaQuery(theme.breakpoints.down("xs"));
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   console.log(isMatch);
 
   return (
     <React.Fragment>
-      <AppBar
-        style={{
-          background: "rgba(247, 0, 0, 0.079)",
-          boxShadow:
-            "inset 54.1667px -54.1667px 54.1667px rgba(187, 0, 0, 0.079), inset -54.1667px 54.1667px 54.1667px rgba(255, 255, 255, 0.079)",
-        }}
-      >
+      <AppBar sx={{ background: "#063970" }}>
         <Toolbar>
-          <img src={gtdlogo} />
           {isMatch ? (
             <>
-              <Typography sx={{ fontSize: "2rem", paddingLeft: "10%" }}>
-                Shoppee
-              </Typography>
+              <img src={gtdlogo} />
+              <DrawerComp />
             </>
           ) : (
             <>
+              <img src={gtdlogo} />
               <Tabs
                 sx={{ marginLeft: "auto" }}
-                TabIndicatorProps={{
-                  style: {
-                    background: "green",
-                  },
-                }}
+                TabIndicatorProps={{ style: { background: "white" } }}
                 textColor="inherit"
                 value={value}
                 onChange={(e, value) => setValue(value)}
