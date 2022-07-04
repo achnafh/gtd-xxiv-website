@@ -55,18 +55,10 @@ const Header = () => {
               >
                 <Tab label="HOME" component={Link} to={"/"} />
                 <Tab label="ABOUT US" component={Link} to={"/about"} />
-                <LinkTab
-                  label="OUR COMMITTEE"
-                  component={Link}
-                  to={"/committee"}
-                />
-                <LinkTab label="EVENTS" component={Link} to={"/event"} />
-                <LinkTab label="FAQ" component={Link} to={"/faq"} />
-                <LinkTab
-                  label="LEADERBOARD"
-                  component={Link}
-                  to={"/leaderboard"}
-                />
+                <Tab label="OUR COMMITTEE" component={Link} to={"/committee"} />
+                <Tab label="EVENTS" component={Link} to={"/event"} />
+                <Tab label="FAQ" component={Link} to={"/faq"} />
+                <Tab label="LEADERBOARD" component={Link} to={"/leaderboard"} />
               </Tabs>
             </>
           )}
