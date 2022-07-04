@@ -21,7 +21,7 @@ const LinkTab = (props) => {
       onClick={(event) => {
         event.preventDefault();
       }}
-      containerElement={<Link to={props.page} />}
+      style={{ position: "sticky" }}
       {...props}
     />
   );
@@ -53,12 +53,20 @@ const Header = () => {
                 value={value}
                 onChange={(e, value) => setValue(value)}
               >
-                <LinkTab label="HOME" page="/home" />
-                <LinkTab label="ABOUT US" href="/about" />
-                <LinkTab label="OUR COMMITTEE" href="/committee" />
-                <LinkTab label="EVENTS" href="/event" />
-                <LinkTab label="FAQ" href="/faq" />
-                <LinkTab label="LEADERBOARD" href="/event" />
+                <Tab label="HOME" component={Link} to={"/"} />
+                <Tab label="ABOUT US" component={Link} to={"/about"} />
+                <LinkTab
+                  label="OUR COMMITTEE"
+                  component={Link}
+                  to={"/committee"}
+                />
+                <LinkTab label="EVENTS" component={Link} to={"/event"} />
+                <LinkTab label="FAQ" component={Link} to={"/faq"} />
+                <LinkTab
+                  label="LEADERBOARD"
+                  component={Link}
+                  to={"/leaderboard"}
+                />
               </Tabs>
             </>
           )}
