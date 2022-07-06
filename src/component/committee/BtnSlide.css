@@ -1,0 +1,14 @@
+.btn-slide {
+    background-color: transparent;
+    cursor:pointer;
+    border: none;
+    padding:10px;
+    transform:scale(1);
+}
+
+.btn-slide:hover{
+    color:aqua;
+    cursor:pointer;
+    transform:scale(1.1);
+
+}

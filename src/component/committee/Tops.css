@@ -1,0 +1,43 @@
+
+/* START OF TOPS GRID ELEMENT */
+.tops {
+    display: grid;
+    margin-top:0;
+    grid-template-columns: repeat(3, 260px);
+    grid-row-gap:10px;
+    grid-column-gap:0px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    ". president ."
+    "polog ppit-welfare gl-bfm";
+  }
+  
+  .president {
+    grid-area: president;
+  }
+  
+  .polog {
+    grid-area: polog;
+    justify-self: end;
+  }
+  
+  .gl-bfm {
+    grid-area: gl-bfm;
+  }
+  
+  .ppit-welfare {
+    grid-area: ppit-welfare;
+    justify-self: start;
+  }
+  
+  
+  
+  /* END OF TOPS GRID ELEMENT */
+  
+  @media only screen and (max-width: 800px){
+    .tops {
+      display: flex;
+      flex-direction: column;
+    }
+  }

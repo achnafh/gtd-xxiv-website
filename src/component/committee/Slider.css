@@ -1,0 +1,55 @@
+
+
+.dot-container {
+    display:flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+  
+.dot {
+background-color: #fff;
+padding: 2px;
+margin: 10px;
+width: 1.2rem;
+height: 1.2rem;
+border-radius: 50%;
+box-shadow: #acdac6;
+}
+
+.dot--active{
+background-color:rgb(45, 182, 145);
+border: 0px;
+animation-name: dot-anim;
+animation-duration: 0.5s;
+}
+
+.dot:hover{
+transform:scale(1.1);
+background-color:rgb(56, 118, 101);
+border: 3px solid #fff;
+box-shadow: #acdac6;
+cursor:pointer;
+}
+
+@keyframes dot-anim {
+    0%{ border: 4px solid #fff;
+    transition:all 0.3s ease }
+    100% {border: 0px solid #fff;}
+}
+
+@media only screen and (max-width: 800px){
+
+    .dot-container {
+        width:60%;
+        margin-top:0;
+    }
+    .dot {
+      width: 0.9rem;
+      height: 0.9rem;
+    }
+
+    .dot:hover{
+        border:0;
+    }
+}
