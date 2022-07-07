@@ -1,170 +1,17 @@
 import React from 'react';
 import "./Main.css";
 import "./Cards.css";
+import profileData from './Database';
 
-const Cards = ({profileData,position, slideIndex}) => {
-    const cardBG = "/images/profile-background.png";
+const Cards = ({position, slideIndex}) => {
+    const cardBG = "/images/committee/profile-background.png";
     const checkMaincomm = (position) => position.startsWith("m");
-
-    // const profileData = [
-    //     {
-    //         division: "PPIT",
-    //         id:1, 
-    //         maincomm: [{
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         }
-    //     ],
-    //         subcomm: [{
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         }
-    //     ]},
-
-    //     {
-    //         division: "Welfare",
-    //         id: 2, 
-    //         maincomm: [{
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         }
-    //     ],
-    //         subcomm: [{
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         }
-    //     ]},
-    //     {
-    //         division: "Group Leader",
-    //         id: 3, 
-    //         maincomm: [{
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         }
-    //     ],
-    //         subcomm: [{
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         },
-    //         {
-    //             name: "Kelvin Leo",
-    //             major: "MSE/Year 2",
-    //             photo: "/images/achnaf-twibbon.jpg"
-    //         }
-    //     ]}
-    // ]
+    console.log(slideIndex)
 
     return ( 
         <div className={`${checkMaincomm(position) ? "maincomm-container" : "subcomm-container"}`}>
-            {profileData.map((portfol)=>(
-                <section className={`${portfol.id === slideIndex? `${position} active` : `${position}`}`} key={portfol.id}>
-                    {portfol[`${position}`].map((person)=>(
+                <section className={`${position} active`}>
+                    {profileData[slideIndex-1][`${position}`].map((person)=>(
                         <div className="card">
                             <img src={cardBG} alt="" />
                             <div className="overlay"></div>
@@ -176,12 +23,12 @@ const Cards = ({profileData,position, slideIndex}) => {
                                     <h2>{person.name}</h2>
                                     <p>{person.major}</p>
                                     <p>Position</p>
-                                    <p>{`${portfol.division}`}</p>
+                                    <p>{`${profileData[slideIndex-1].division}`}</p>
                                 </div>
                         </div>
                     ))}
                 </section>
-                ))}
+                ))
         </div>
      );
 }

@@ -3,38 +3,38 @@ import "./Main.css";
 import "./Tops.css";
 
 const Tops = () => {
-    const cardBG = "/images/profile-background.png";
+    const cardBG = "/images/committee/profile-background.png";
     const topsData = [
         {
-            name: "Kelvin Leo",
-            major: "MSE/Year 2",
+            name: "Nicolas Erlando",
+            major: "EEE/Year 4",
             portfol: "President",
-            image:"/images/achnaf-twibbon.jpg",
+            image:"/images/committee/photo-not-found.png",
             class:"president",
             id: 1
         },
         {
-            name: "Hagan Hatoto",
-            major: "NBS/Year 3",
-            portfol: "POLOGS",
-            image:"/images/achnaf-twibbon.jpg",
+            name: "Andrew Wira",
+            major: "DSAI/Year 4",
+            portfol: "VP PO-LOGS",
+            image:"/images/committee/photo-not-found.png",
             class:"polog",
             id: 2
         },
         {
-            name: "Jason Nicholas",
-            major: "CBE/Year 3",
-            portfol: "PPIT-Welfare",
-            image:"/images/achnaf-twibbon.jpg",
-            class:"ppit-welfare",
+            name: "Hagan Hototo",
+            major: "NBS/Year 3",
+            portfol: "VP PPIT-BFM",
+            image:"/images/committee/photo-not-found.png",
+            class:"ppit-bfm",
             id: 3
         },
         {
-            name: "Daren Nathaniel",
-            major: "CBE/Year 3",
-            portfol: "GL-BFM",
-            image:"/images/achnaf-twibbon.jpg",
-            class:"gl-bfm",
+            name: "Michael Hans",
+            major: "EEE/Year 4",
+            portfol: "VP GL-Welfare",
+            image:"/images/committee/photo-not-found.png",
+            class:"gl-welfare",
             id: 4
         }
     ]

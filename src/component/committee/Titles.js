@@ -3,10 +3,10 @@ import "./Main.css";
 
 const Title = ({type}) => {
     const titleList = [
-        "/images/title.png",
-        "/images/tops-title.png",
-        "/images/maincomm-title.png",
-        "/images/subcomm-title.png"
+        "/images/committee/title.png",
+        "/images/committee/tops-title.png",
+        "/images/committee/maincomm-title.png",
+        "/images/committee/subcomm-title.png"
     ]
 
     const checkType = () => {

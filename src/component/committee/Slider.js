@@ -3,8 +3,9 @@ import "./Main.css";
 import "./Slider.css";
 import "./Titles.css";
 import BtnSlide from "./BtnSlide";
+import profileData from './Database';
 
-const Slider = ({profileData, slideIndex, setSlideIndex}) => {
+const Slider = ({slideIndex, setSlideIndex}) => {
     const moveDot = (index) => {
         setSlideIndex(index);
         if (window.innerWidth <= 800) {
@@ -49,6 +50,7 @@ const Slider = ({profileData, slideIndex, setSlideIndex}) => {
         }
     };
     const prevSlide = () => {
+        console.log()
         if (slideIndex !== 1){
             setSlideIndex(slideIndex - 1);
             if (window.innerWidth <= 800) {

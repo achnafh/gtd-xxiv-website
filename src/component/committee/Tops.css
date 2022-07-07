@@ -10,7 +10,7 @@
     align-items: center;
     grid-template-areas: 
     ". president ."
-    "polog ppit-welfare gl-bfm";
+    "polog ppit-bfm gl-welfare";
   }
   
   .president {
@@ -22,12 +22,12 @@
     justify-self: end;
   }
   
-  .gl-bfm {
-    grid-area: gl-bfm;
+  .gl-welfare {
+    grid-area: gl-welfare;
   }
   
-  .ppit-welfare {
-    grid-area: ppit-welfare;
+  .ppit-bfm {
+    grid-area: ppit-bfm;
     justify-self: start;
   }
   
