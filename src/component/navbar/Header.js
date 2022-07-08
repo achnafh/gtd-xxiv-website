@@ -9,6 +9,9 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
+  IconButton,
+  Icon,
+  Avatar,
 } from "@mui/material";
 import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
 import DrawerComp from "./DrawerComp";
@@ -36,16 +39,23 @@ const Header = () => {
 
   return (
     <React.Fragment>
-      <AppBar sx={{ background: "#063970" }}>
+      <AppBar
+        sx={{
+          background: "rgba(247, 0, 0, 0.079)",
+          boxShadow:
+            "inset 54.1667px -54.1667px 54.1667px rgba(187, 0, 0, 0.079), inset -54.1667px 54.1667px 54.1667px rgba(255, 255, 255, 0.079)",
+          backdropFilter: "blur(62.8333px)",
+        }}
+      >
         <Toolbar>
           {isMatch ? (
             <>
-              <img src={gtdlogo} />
+              <Tab icon={<img src={gtdlogo} />} component={Link} to={"/"} />
               <DrawerComp />
             </>
           ) : (
             <>
-              <img src={gtdlogo} />
+              <Tab icon={<img src={gtdlogo} />} component={Link} to={"/"} />
               <Tabs
                 sx={{ marginLeft: "auto" }}
                 TabIndicatorProps={{ style: { background: "white" } }}
