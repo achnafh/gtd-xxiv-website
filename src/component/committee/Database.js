@@ -78,7 +78,7 @@ const profileData = [
       {
         name: "Christian Joseph",
         major: "EEE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PO/christian_joseph.JPG",
       },
       {
         name: "Sharyn Anastasia",
@@ -157,7 +157,7 @@ const profileData = [
       {
         name: "Ferlita Halim",
         major: "CSC/Year 4",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/LOGS/ferlita.JPG",
       },
       {
         name: "Hans Aldi",
@@ -177,12 +177,12 @@ const profileData = [
       {
         name: "Kenny Lius",
         major: "EEE/Year 2",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/LOGS/kenny.JPG",
       },
       {
         name: "Hartawan Surya",
         major: "CEE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/LOGS/hartawan.JPG",
       },
       {
         name: "Celine Wijaya",
@@ -340,7 +340,7 @@ const profileData = [
       {
         name: "Vicyie Janvier",
         major: "BIE/Year 2",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PPIT/vicyie.JPG",
       },
       {
         name: "George Bunjamin",
@@ -423,7 +423,7 @@ const profileData = [
       {
         name: "Michael Teguh",
         major: "MSE/Year 4",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/WELF/teguh.JPG",
       },
       {
         name: "Bryan Noel",
