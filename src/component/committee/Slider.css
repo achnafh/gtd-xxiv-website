@@ -20,8 +20,8 @@ box-shadow: #acdac6;
 .dot--active{
 background-color:rgb(45, 182, 145);
 border: 0px;
-animation-name: dot-anim;
-animation-duration: 0.5s;
+animation-name: dot-anim !important;
+animation-duration: 0.5s !important;
 }
 
 .dot:hover{

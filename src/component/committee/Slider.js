@@ -26,7 +26,7 @@ const Slider = ({slideIndex, setSlideIndex}) => {
             if (window.innerWidth <= 800) {
                 window.scrollTo({
                     top:1650,
-                    behavior: "smooth"
+                    behavior: "smooth" 
                 });
             }else {
                 window.scrollTo({

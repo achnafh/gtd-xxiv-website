@@ -177,7 +177,7 @@ const profileData = [
             photo: "/images/committee/photo-not-found.png"
         },
         {
-            name: "Hartwan Surya",
+            name: "Hartawan Surya",
             major: "CEE/Year 3",
             photo: "/images/committee/photo-not-found.png"
         },
@@ -252,9 +252,9 @@ const profileData = [
         },
     ],
         subcomm: [{
-            name: "Achnaf H",
-            major: "MAE/Year 2",
-            photo: "/images/committee/PPIT/achnaf.png"
+            name: "Abraham Osmond",
+            major: "MAS/Year 4",
+            photo: "/images/committee/PPIT/abraham.jpg"
         },
         {
             name: "Leonardo Irvin",
@@ -265,6 +265,11 @@ const profileData = [
             name: "Kennard Hans",
             major: "EEE/Year 3",
             photo: "/images/committee/PPIT/kennard.jpg"
+        },
+        {
+            name: "Achnaf H",
+            major: "MAE/Year 2",
+            photo: "/images/committee/PPIT/achnaf.png"
         },
         {
             name: "Valdy Lionel",
@@ -290,11 +295,6 @@ const profileData = [
             name: "Jessika Hartanto",
             major: "ADM/Year 4",
             photo: "/images/committee/PPIT/jessika-hartanto.jpg"
-        },
-        {
-            name: "Abraham Osmond",
-            major: "MAS/Year 4",
-            photo: "/images/committee/PPIT/abraham.jpg"
         },
         {
             name: "Ricky Winarko",
@@ -429,7 +429,7 @@ const profileData = [
         {
             name: "Felicia Angelina",
             major: "NBS/Year 3",
-            photo: "/images/committee/WELF/Felicia-Angelina.jpg"
+            photo: "/images/committee/WELF/Felicia-Angeline.jpg"
         },
         {
             name: "Jessica Martin",

@@ -116,9 +116,9 @@
   /* Maincomm Flexbox */
   .active{
     display:flex;
-    animation-name: slides;
-    animation-duration:1s;
-    animation-delay: 0s;
+    animation-name: slides !important;
+    animation-duration:1s !important;
+    animation-delay: 0s !important;
     
   }
 

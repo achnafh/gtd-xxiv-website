@@ -3,6 +3,7 @@ import "./Main.css";
 import "./Cards.css";
 import profileData from './Database';
 
+
 const Cards = ({position, slideIndex}) => {
     const cardBG = "/images/committee/profile-background.png";
     const checkMaincomm = (position) => position.startsWith("m");
