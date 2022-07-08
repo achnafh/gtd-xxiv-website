@@ -1,0 +1,140 @@
+/* ALL TITLES */
+.heading, .tops-title, .maincomm-title, .subcomm-title {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 0;
+  }
+  .maincomm-title{
+    margin-top:0;
+  }
+  
+  .subcomm-title{
+    margin-top:70px;
+  }
+  
+  .heading > img, .tops-title > img, .maincomm-title > img, .subcomm-title > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .portfol-title {
+    margin: 0px auto;
+    margin-bottom:30px;
+    margin-top: 60px;
+    text-align: center;
+    width: 800px;
+    height:150px;
+    top:100px;
+  }
+  
+  .portfol-title-flex{
+    display:flex;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom:0px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  
+  .portfol-title-flex h1{
+    color: #fff;
+    font-size:3rem;
+    flex-grow: 1;
+    align-self: center;
+    padding: 5px 10px;
+  }
+  
+  .portfol-title img {
+    width: 60px;
+    height: auto;
+    padding: 5px;
+  }
+
+  
+  .portfol-title-division{
+    width: 100%;
+    text-align: center;
+    align-self:center;
+    animation-name: title-popup;
+    animation-duration: 1s;
+  }
+
+  .portfol-title-disabled{
+    display:none;
+  }
+
+  @keyframes title-popup {
+    0% {opacity:1;
+      transform:scale(0.95);
+      transition: all 0.5s ease-in;}
+    50% {
+      opacity: 1;
+      transform:scale(1);
+      transition: all 0.5s ease-in;
+    }
+  }
+
+  
+  @media only screen and (max-width: 800px){
+    .heading, .tops-title, .maincomm-title, .portfol-title, .subcomm-title {
+      width: 100vw;
+      height: auto;
+    }
+  
+    .heading{
+      transform:scale(1.3);
+    }
+    .tops-title, .maincomm-title, .portfol-title, .subcomm-title {
+      transform: scale(1.4);
+    }
+
+    .tops-title{
+      margin-top:30px;
+    }
+
+    .maincomm-title, .subcomm-title{
+      overflow-x:hidden;
+      width:100vw;
+      transform:translateX(20px;)
+    }
+  
+    .portfol-title{
+      width: 100vw;
+      height: auto;
+      margin:0 auto;
+      margin-top: 50px;
+      margin-bottom:30px;
+      padding: 20px 0px;
+      font-family: 'suicide-squad';
+    }
+  
+    .portfol-title-flex{
+      width: 70%;
+      font-family: 'suicide-squad';
+      margin: 0 auto;
+      margin-bottom:0;
+      padding-bottom:0;
+    }
+  
+    .portfol-title-division{
+      width:80%;
+      text-align:center;
+      padding:0;
+    }
+
+    .portfol-title-flex h1 {
+      font-size: 1.7rem;
+      padding: 0;
+      align-self: center;
+    }
+  
+    .portfol-title img{
+      transform: scale(0.7);
+    }
+
+}

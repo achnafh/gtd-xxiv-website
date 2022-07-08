@@ -1,429 +1,411 @@
 /*General Content Box*/
 
-.content-box{
-    position: relative;
+.content-box {
+  position: relative;
 
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
 
-    width: 1350px;
-    height: auto;
-    min-height: 823px;
+  width: 1350px;
+  height: auto;
+  min-height: 823px;
 
-    margin: auto;
-    transform: scale(0.9);
-    top: -120px;
+  margin: auto;
+  transform: scale(0.9);
+  top: -120px;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
+  box-shadow: 0 0 7.8px 11.4px #ffffff,
+    /* white border */ inset 0 0 7.8px 5.4px #ffffff,
+    /* white border inset */ 0 0 10.8px 12px #23f6f6,
+    /* light-blue extends a bit from white */ inset 0 0 10.8px 15px #23f6f6,
+    /* light-blue inset */ 0 0 180px 40px rgba(0, 168, 168, 1),
+    /* large blue glow */ inset 0 0 80px 20px rgba(0, 168, 168, 0.8); /* large blue glow inset*/
 
-    box-shadow:
-                0 0 7.8px 11.4px #FFFFFF, /* white border */
-                inset 0 0 7.8px 5.4px #FFFFFF, /* white border inset */
-                0 0 10.8px 12px #23f6f6,  /* light-blue extends a bit from white */
-                inset 0 0 10.8px 15px #23f6f6, /* light-blue inset */
-                0 0 180px 40px rgba(0, 168, 168, 1), /* large blue glow */
-                inset 0 0 80px 20px rgba(0, 168, 168, 0.8); /* large blue glow inset*/
-
-    background-color: rgba(54, 87, 96, 0.8);
+  background-color: rgba(54, 87, 96, 0.8);
 }
 
-.content-flex-container{
-    position: relative;
+.content-flex-container {
+  position: relative;
 
-    min-width: 97%;
-    min-height: 97%;
-    height: auto;
-    width: auto;
-    display: flex;
+  min-width: 97%;
+  min-height: 97%;
+  height: auto;
+  width: auto;
+  display: flex;
 
-    left: 50%;
-    transform: translateX(-50%);
-
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.content{
-    flex: 1;
+.content-faq {
+  flex: 1;
 }
-
 
 /*Contact Us & google Form*/
 
-.contact-us{
-    flex-grow: 9;
-    flex-direction: column;
+.contact-us {
+  flex-grow: 9;
+  flex-direction: column;
 
-    margin-top: 15px;
-    margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 
-    background: rgba(65, 233, 202, 0.83);
-    border-radius: 10px;
+  background: rgba(65, 233, 202, 0.83);
+  border-radius: 10px;
 
-    text-align: center;
-    align-items: center;
+  text-align: center;
+  align-items: center;
 
-    display: flex;
+  display: flex;
 }
 
-.contact-us p{
-    width: 100%;
-    height: 83px;
-    margin-top: 20px;
+.contact-us p {
+  width: 100%;
+  height: 83px;
+  margin-top: 20px;
 
+  font-family: "Suicide Squad Font", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 83px;
 
-    font-family: 'Suicide Squad Font', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 83px;
+  color: #000000;
 
-    color: #000000;
-
-    z-index: 1;
+  z-index: 1;
 }
 
-.contact-us .iframe-flex-container{
-    width: 100%;
-    height: 80%;
-    flex-grow: 1;
+.contact-us .iframe-flex-container {
+  width: 100%;
+  height: 80%;
+  flex-grow: 1;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-us .iframe-box{
-    position: relative;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
+.contact-us .iframe-box {
+  position: relative;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
-.contact-us iframe{
-    width: 100%;
-    height: 100%;
+.contact-us iframe {
+  width: 100%;
+  height: 100%;
 }
-
-
 
 /*FAQS*/
 
-.faq-box{
-    flex-grow: 10;
-    display: flex;
+.faq-box {
+  flex-grow: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-right: 20px;
+}
+
+.faq-box-scroll-container {
+  max-height: 790px;
+  overflow-y: scroll;
+}
+
+.faq-box Button {
+  height: auto;
+
+  min-height: 168px;
+  position: relative;
+  width: 92%;
+  max-width: 92%;
+
+  background: rgba(98, 182, 201, 0.93);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: none;
+
+  /*already a built in bottom margin: 8px,*/
+  margin: 15px auto 7px;
+
+  transition: transform 250ms !important;
+}
+
+.faq-box .button-component-container {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.faq-box .button-component {
+  flex: 1;
+}
+
+.faq-box .button-text {
+  padding: 15px;
+  margin-bottom: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-grow: 3;
+
+  color: black;
+  font-family: "Suicide Squad Font", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+}
+
+.faq-box .triangle-container {
+  position: relative;
+  /*max-width: 20%;*/
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-box .triangle {
+  position: relative;
+  transition: 250ms;
+}
+
+.faq-box .triangle-active {
+  transform: rotate(180deg);
+  transform-origin: 50% 48%;
+  transition: 250ms;
+}
+
+.faq-box .collapse-container {
+  position: relative;
+}
+
+.faq-box .btn.btn-primary.btn-lg {
+  padding: 0;
+}
+
+.faq-box Button:hover {
+  background-color: rgba(98, 182, 201, 0.93);
+  box-shadow: none;
+  color: black;
+  transform: scale(1.02);
+}
+.faq-box Button[aria-expanded="true"] {
+  background-color: rgba(98, 182, 201, 0.93);
+  box-shadow: none;
+  color: black;
+}
+.faq-box Button[aria-expanded="false"] {
+  background-color: rgba(98, 182, 201, 0.93);
+  box-shadow: none;
+  color: black;
+}
+
+.collapse-text-general {
+  position: relative;
+  margin: 15px 4% 8px;
+
+  padding: 8px 12px 8px;
+  border-radius: 10px;
+  background: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1550px) {
+  .content-box {
+    width: 1250px;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .content-box {
+    width: 1100px;
+    padding-right: 8px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .content-box {
+    position: relative;
+    width: 94%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .faq-box-scroll-container {
+    max-height: none;
+    overflow-y: hidden;
+  }
+
+  .content-flex-container {
+    position: relative;
+
+    padding: 5px 5px 30px;
+    margin: 0;
+    width: 80%;
     flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding-right: 20px;
-}
+    flex-wrap: wrap;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-.faq-box-scroll-container{
-    max-height: 790px;
-    overflow-y: scroll;
-}
-
-.faq-box Button{
-    height:auto;
-
-    min-height:168px;
-    position: relative;
+  .contact-us {
     width: 92%;
-    max-width: 92%;
+    margin: 30px auto 15px;
+  }
 
-    background: rgba(98, 182, 201, 0.93);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    border: none;
+  .contact-us .iframe-flex-container {
+    height: auto;
+  }
 
-    /*already a built in bottom margin: 8px,*/
-    margin: 15px auto 7px;
+  .contact-us .iframe-box {
+    height: auto;
+  }
 
-    transition: transform 250ms !important;
-}
+  .contact-us iframe {
+    width: 100%;
+    height: 680px;
+  }
 
-.faq-box .button-component-container{
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-}
-
-.faq-box .button-component{
-    flex: 1;
-}
-
-.faq-box .button-text{
-    padding: 15px;
-    margin-bottom: 0;
-
-    align-items: center;
-    justify-content: center;
-
-    flex-grow: 3;
-
-    color: black;
-    font-family: "Suicide Squad Font", serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 41px;
-}
-
-.faq-box .triangle-container{
+  .faq-box {
     position: relative;
-    /*max-width: 20%;*/
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-}
+    padding-right: 0;
+  }
 
-.faq-box .triangle{
-    position: relative;
-    transition: 250ms;
-}
+  .collapse-container {
+    min-width: 0;
+  }
 
-.faq-box .triangle.active{
-    transform: rotate(180deg);
-    transform-origin: 50% 48%;
-    transition: 250ms;
-}
+  .collapse-text-general {
+    margin-top: 15px;
+  }
 
-.faq-box .collapse-container{
-    position: relative;
-}
-
-.faq-box .btn.btn-primary.btn-lg{
-    padding: 0;
-}
-
-.faq-box Button:hover{
-    background-color: rgba(98, 182, 201, 0.93);
-    box-shadow: none;
-    color: black;
-    transform: scale(1.02);
-}
-.faq-box Button[aria-expanded="true"]{
-    background-color: rgba(98, 182, 201, 0.93);
-    box-shadow: none;
-    color: black;
-
-}
-.faq-box Button[aria-expanded="false"]{
-    background-color: rgba(98, 182, 201, 0.93);
-    box-shadow: none;
-    color: black;
-
-}
-
-.collapse-text-general{
-    position: relative;
-    margin: 15px 4% 8px;
-
-    padding: 8px 12px 8px;
-    border-radius: 10px;
-    background: white;
-    text-align: center;
-    font-size: 18px;
-}
-
-
-
-@media screen and (max-width: 1550px){
-    .content-box{
-        width: 1250px;
-    }
-}
-
-@media screen and (max-width: 1380px){
-    .content-box{
-        width: 1100px;
-        padding-right: 8px;
-    }
-}
-
-@media screen and (max-width: 1110px){
-
-    .content-box{
-        position: relative;
-        width: 94%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .faq-box-scroll-container{
-        max-height: none;
-        overflow-y: hidden;
-    }
-
-    .content-flex-container{
-        position: relative;
-
-        padding: 5px 5px 30px;
-        margin: 0;
-        width: 80%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .contact-us{
-        width: 92%;
-        margin: 30px auto 15px;
-    }
-
-    .contact-us .iframe-flex-container{
-        height: auto;
-
-    }
-
-    .contact-us .iframe-box{
-        height: auto;
-    }
-
-    .contact-us iframe{
-        width: 100%;
-        height: 680px;
-    }
-
-    .faq-box{
-        position: relative;
-        padding-right: 0;
-    }
-
-    .collapse-container{
-        min-width: 0;
-    }
-
-    .collapse-text-general{
-        margin-top: 15px;
-    }
-
-    .faq-box Button{
-    }
-
-
+  .faq-box Button {
+  }
 }
 
 @media screen and (max-width: 730px) {
-    .content-flex-container{
-        padding-bottom: 15px;
-        padding-top: 0;
-    }
+  .content-flex-container {
+    padding-bottom: 15px;
+    padding-top: 0;
+  }
 
-    .faq-box Button{
-        margin-top: 10px;
-        margin-bottom: 2px;
-    }
+  .faq-box Button {
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
 
-    .contact-us{
-        margin-bottom: 10px;
-        margin-top: 25px;
-    }
+  .contact-us {
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
 
-    .content-box{
-        box-shadow:
-                0 0 7.8px 5.4px #FFFFFF, /* white border */
-                inset 0 0 7.8px 2.4px #FFFFFF, /* white border inset */
-                0 0 10.8px 7px #23f6f6,  /* light-blue extends a bit from white */
-                inset 0 0 10.8px 10px #23f6f6, /* light-blue inset */
-                0 0 180px 36px rgba(0, 168, 168, 1), /* large blue glow */
-                inset 0 0 80px 16px rgba(0, 168, 168, 0.8); /* large blue glow inset*/
-    }
+  .content-box {
+    box-shadow: 0 0 7.8px 5.4px #ffffff,
+      /* white border */ inset 0 0 7.8px 2.4px #ffffff,
+      /* white border inset */ 0 0 10.8px 7px #23f6f6,
+      /* light-blue extends a bit from white */ inset 0 0 10.8px 10px #23f6f6,
+      /* light-blue inset */ 0 0 180px 36px rgba(0, 168, 168, 1),
+      /* large blue glow */ inset 0 0 80px 16px rgba(0, 168, 168, 0.8); /* large blue glow inset*/
+  }
 
-    .faq-box .triangle{
-        width: 40%;
-        height: auto;
-    }
+  .faq-box .triangle {
+    width: 40%;
+    height: auto;
+  }
 }
 
-@media screen and (max-width: 650px ){
-    .content-flex-container{
-        padding-bottom: 10px;
-    }
-    .contact-us{
-        margin-top: 18px;
-    }
+@media screen and (max-width: 650px) {
+  .content-flex-container {
+    padding-bottom: 10px;
+  }
+  .contact-us {
+    margin-top: 18px;
+  }
 
-    .faq-box Button{
-        min-height: 150px;
-        height: auto;
-    }
+  .faq-box Button {
+    min-height: 150px;
+    height: auto;
+  }
 
-    .collapse-text-general{
-        font-size: 16px;
-    }
+  .collapse-text-general {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 520px) {
-    .contact-us p{
-        font-size: 54px;
-    }
+  .contact-us p {
+    font-size: 54px;
+  }
 
-    .faq-box Button{
-        margin-top: 8px;
-        margin-bottom: 0;
-    }
+  .faq-box Button {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
 
-    .faq-box .button-text{
-        font-size: 30px;
-        line-height: 36px;
-    }
+  .faq-box .button-text {
+    font-size: 30px;
+    line-height: 36px;
+  }
 
-    .faq-box Button{
-        height: auto;
-        min-height: 120px;
-    }
+  .faq-box Button {
+    height: auto;
+    min-height: 120px;
+  }
 
-    .contact-us{
-        margin-top: 16px;
-    }
+  .contact-us {
+    margin-top: 16px;
+  }
 
-    .content-box{
-        padding-bottom: 10px;
-    }
+  .content-box {
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 420px) {
-    .contact-us p{
-        font-size: 40px;
-    }
+  .contact-us p {
+    font-size: 40px;
+  }
 
-    .faq-box Button{
-        margin-top: 4px;
-        margin-bottom: 0;
-        min-height: 100px;
-        height: auto;
-    }
+  .faq-box Button {
+    margin-top: 4px;
+    margin-bottom: 0;
+    min-height: 100px;
+    height: auto;
+  }
 
-    .faq-box .button-text{
-        font-size: 26px;
-        line-height: 33px;
-        padding: 8px;
-    }
+  .faq-box .button-text {
+    font-size: 26px;
+    line-height: 33px;
+    padding: 8px;
+  }
 
-    .collapse-text-general{
-        margin-top: 12px;
-    }
-
-
+  .collapse-text-general {
+    margin-top: 12px;
+  }
 }
 
-@media screen and (max-width: 370px ){
-    .content-box{
-        padding-top: 0;
-    }
-    .content-flex-container{
-        padding-bottom: 10px;
-    }
-    .contact-us{
-        margin-top: 22px;
-    }
-    .faq-box .button-text{
-        padding: 5px;
-        font-size: 24px;
-        line-height: 30px;
-    }
+@media screen and (max-width: 370px) {
+  .content-box {
+    padding-top: 0;
+  }
+  .content-flex-container {
+    padding-bottom: 10px;
+  }
+  .contact-us {
+    margin-top: 22px;
+  }
+  .faq-box .button-text {
+    padding: 5px;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }

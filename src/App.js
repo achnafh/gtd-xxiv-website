@@ -1,5 +1,4 @@
 import React from "react";
-import axios from 'axios'
 
 // Components
 import Navbar from "./component/navbar";
@@ -22,7 +21,6 @@ function PrivateRoute({ children }) {
 }
 
 function App() {
-  
   return (
     <Router>
       <Navbar />
