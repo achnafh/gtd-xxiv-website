@@ -177,7 +177,7 @@
   transition: 250ms;
 }
 
-.faq-box .triangle.active {
+.faq-box .triangle-active {
   transform: rotate(180deg);
   transform-origin: 50% 48%;
   transition: 250ms;
