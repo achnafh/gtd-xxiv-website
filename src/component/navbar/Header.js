@@ -62,7 +62,6 @@ const Header = () => {
             <Tabs
               sx={{ marginLeft: "auto" }}
               TabIndicatorProps={{ style: { background: "white" } }}
-              textColor="inherit"
               value={value}
               onChange={(e, value) => setValue(value)}
             >

@@ -21,10 +21,11 @@ const DrawerComp = (props) => {
       >
         <Tabs
           orientation="vertical"
-          TabIndicatorProps={{ style: { background: "black" } }}
+          TabIndicatorProps={{ style: { background: "white" } }}
           textColor="inherit"
           value={value}
           onChange={(e, value) => setValue(value)}
+          className="navbar-tabs-background"
         >
           <Tab
             onClick={onClickTab}
