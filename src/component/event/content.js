@@ -2,7 +2,7 @@ import Image from "./image/GTD 5.png";
 import Day0 from "./image/Day 0.png";
 import Day1 from "./image/Day 1.png";
 import Day2 from "./image/Day 2.png";
-import Day3 from "./image/Day 2.png";
+import Day3 from "./image/Day 3.png";
 const content = [
   {
     id: 1,
