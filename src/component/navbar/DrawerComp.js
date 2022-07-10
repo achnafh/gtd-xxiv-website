@@ -1,29 +1,12 @@
 import React, { useState } from "react";
-import {
-  Drawer,
-  IconButton,
-  List,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-  Tabs,
-  Tab,
-} from "@mui/material";
+import { Drawer, IconButton, Tabs, Tab } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
+import "./navbar.css";
 
-const pages = [
-  "HOME",
-  "ABOUT US",
-  "OUR COMMITTEE",
-  "EVENTS",
-  "FAQ",
-  "LEADERBOARD",
-];
-
-const DrawerComp = () => {
+const DrawerComp = (props) => {
   const [openDrawer, setOpenDrawer] = useState(false);
-  const [value, setValue] = useState();
+  const { value, setValue } = props;
 
   //function to close the drawer when the tab is chosen
   const onClickTab = () => {
@@ -32,50 +15,50 @@ const DrawerComp = () => {
   return (
     <React.Fragment>
       <Drawer
-        anchor="left"
+        anchor="right"
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
       >
-        {/* <List>
-          {pages.map((page, index) => (
-            <ListItemButton key={index}>
-              <ListItemIcon>
-                <ListItemText>{page}</ListItemText>
-              </ListItemIcon>
-            </ListItemButton>
-          ))}
-        </List> */}
         <Tabs
           orientation="vertical"
-          sx={{ marginLeft: "auto" }}
-          TabIndicatorProps={{ style: { background: "white" } }}
+          TabIndicatorProps={{ style: { background: "black" } }}
           textColor="inherit"
           value={value}
           onChange={(e, value) => setValue(value)}
         >
-          <Tab onClick={onClickTab} label="HOME" component={Link} to={"/"} />
           <Tab
             onClick={onClickTab}
-            label="ABOUT US"
+            label={<span className="navbar-label">HOME</span>}
+            component={Link}
+            to={"/"}
+          />
+          <Tab
+            onClick={onClickTab}
+            label={<span className="navbar-label">ABOUT US</span>}
             component={Link}
             to={"/about"}
           />
           <Tab
             onClick={onClickTab}
-            label="OUR COMMITTEE"
+            label={<span className="navbar-label">OUR COMMITTEE</span>}
             component={Link}
             to={"/committee"}
           />
           <Tab
             onClick={onClickTab}
-            label="EVENTS"
+            label={<span className="navbar-label">EVENTS</span>}
             component={Link}
             to={"/event"}
           />
-          <Tab onClick={onClickTab} label="FAQ" component={Link} to={"/faq"} />
           <Tab
             onClick={onClickTab}
-            label="LEADERBOARD"
+            label={<span className="navbar-label">FAQ</span>}
+            component={Link}
+            to={"/faq"}
+          />
+          <Tab
+            onClick={onClickTab}
+            label={<span className="navbar-label">LEADERBOARD</span>}
             component={Link}
             to={"/leaderboard"}
           />

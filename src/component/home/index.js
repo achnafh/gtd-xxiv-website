@@ -1,38 +1,20 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import Anthem from "./Anthem";
 import Header from "./Header";
-import "./home.css";
-import neonBlue from "./image/Neon Blue.png";
-import neonRed from "./image/Neon Red.png";
-import neonYellow from "./image/Neon Yellow.png";
-import neonGreen from "./image/Neon Green.png";
+import Logos from "./Logos";
+import Storyline from "./Storyline";
+import Video from "./Video";
 
 export default function Home(props) {
   return (
-    <div className="grafitti">
-      <div>
-        <Header />
+    <>
+      <Header />
+      <div className="home_container">
+        <Logos />
+        <Video url={"https://www.youtube.com/embed/M4gJUDFk2HA"} />
+        <Storyline />
+        <Anthem />
       </div>
-      <div className="neon-row">
-        <div className="neon-item">
-          <img src={neonBlue} />
-        </div>
-        <div className="neon-item">
-          <img src={neonYellow} />
-        </div>
-      </div>
-      <div className="neon-row">
-        <div className="neon-item">
-          <img src={neonGreen} />
-        </div>
-        <div className="neon-item">
-          <img src={neonRed} />
-        </div>
-      </div>
-      <div className="storyline"></div>
-      <div className="storyline content"></div>
-      <div className="anthem"></div>
-      <div className="anthemContent"></div>
-    </div>
+    </>
   );
 }

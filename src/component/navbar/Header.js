@@ -2,20 +2,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   AppBar,
-  Button,
   Tab,
   Tabs,
   Toolbar,
-  Typography,
   useMediaQuery,
   useTheme,
-  IconButton,
-  Icon,
-  Avatar,
 } from "@mui/material";
-import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
 import DrawerComp from "./DrawerComp";
 import gtdlogo from "./images/gtdlogo.svg";
+import "./navbar.css";
 
 const LinkTab = (props) => {
   return (
@@ -31,50 +26,81 @@ const LinkTab = (props) => {
 };
 
 const Header = () => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState(0);
   const theme = useTheme();
-  console.log(theme);
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  console.log(isMatch);
 
   return (
-    <React.Fragment>
-      <AppBar
-        sx={{
-          background: "rgba(247, 0, 0, 0.079)",
-          boxShadow:
-            "inset 54.1667px -54.1667px 54.1667px rgba(187, 0, 0, 0.079), inset -54.1667px 54.1667px 54.1667px rgba(255, 255, 255, 0.079)",
-          backdropFilter: "blur(62.8333px)",
-        }}
-      >
-        <Toolbar>
-          {isMatch ? (
-            <>
-              <Tab icon={<img src={gtdlogo} />} component={Link} to={"/"} />
-              <DrawerComp />
-            </>
-          ) : (
-            <>
-              <Tab icon={<img src={gtdlogo} />} component={Link} to={"/"} />
-              <Tabs
-                sx={{ marginLeft: "auto" }}
-                TabIndicatorProps={{ style: { background: "white" } }}
-                textColor="inherit"
-                value={value}
-                onChange={(e, value) => setValue(value)}
-              >
-                <Tab label="HOME" component={Link} to={"/"} />
-                <Tab label="ABOUT US" component={Link} to={"/about"} />
-                <Tab label="OUR COMMITTEE" component={Link} to={"/committee"} />
-                <Tab label="EVENTS" component={Link} to={"/event"} />
-                <Tab label="FAQ" component={Link} to={"/faq"} />
-                <Tab label="LEADERBOARD" component={Link} to={"/leaderboard"} />
-              </Tabs>
-            </>
-          )}
-        </Toolbar>
-      </AppBar>
-    </React.Fragment>
+    <AppBar
+      sx={{
+        background: "rgba(0, 0, 0, 0.079)",
+        boxShadow:
+          "inset 54.1667px -54.1667px 54.1667px rgba(0, 0, 0, 0.079), inset -54.1667px 54.1667px 54.1667px rgba(255, 255, 255, 0.079)",
+        backdropFilter: "blur(60.8333px)",
+        maxHeight: "10vh",
+      }}
+    >
+      <Toolbar>
+        {isMatch ? (
+          <>
+            <Tab
+              icon={<img src={gtdlogo} className="navbar-logo" />}
+              component={Link}
+              to={"/"}
+              onClick={() => setValue(0)}
+            />
+            <DrawerComp value={value} setValue={setValue} />
+          </>
+        ) : (
+          <>
+            <Tab
+              label={<img src={gtdlogo} className="navbar-logo" />}
+              component={Link}
+              to={"/"}
+              onClick={() => setValue(0)}
+            />
+            <Tabs
+              sx={{ marginLeft: "auto" }}
+              TabIndicatorProps={{ style: { background: "white" } }}
+              textColor="inherit"
+              value={value}
+              onChange={(e, value) => setValue(value)}
+            >
+              <Tab
+                label={<span className="navbar-label">HOME</span>}
+                component={Link}
+                to={"/"}
+              />
+              <Tab
+                label={<span className="navbar-label">ABOUT US</span>}
+                component={Link}
+                to={"/about"}
+              />
+              <Tab
+                label={<span className="navbar-label">OUR COMMITTEE</span>}
+                component={Link}
+                to={"/committee"}
+              />
+              <Tab
+                label={<span className="navbar-label">EVENTS</span>}
+                component={Link}
+                to={"/event"}
+              />
+              <Tab
+                label={<span className="navbar-label">FAQ</span>}
+                component={Link}
+                to={"/faq"}
+              />
+              <Tab
+                label={<span className="navbar-label">LEADERBOARD</span>}
+                component={Link}
+                to={"/leaderboard"}
+              />
+            </Tabs>
+          </>
+        )}
+      </Toolbar>
+    </AppBar>
   );
 };
 

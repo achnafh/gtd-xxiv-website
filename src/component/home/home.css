@@ -1,91 +1,172 @@
 @font-face {
-    font-family: nos;
-    src: url(Suicide\ Squad\ Font.ttf);
-  }
-  @font-face {
-    font-family: nos2;
-    src: url(TsukimiRounded-Regular.ttf);
-  }
-  @import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300&display=swap");
-  
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .general {
-    background-image: url("image/grafitti/Grafitti.png");
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    font-family: nos;
-    font-size: 100%;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-  }
-
-  .grafitti {
-    background :  rgba(0, 0, 0, 0.5) url("image/grafitti/Grafitti.png") ;
-    display: flex;
-    flex-direction : column;
-    max-width: 100%;
-  }
-
-  .neon-row {
-    width : 80%;
-    justify-content: center;
-    margin: 5%;
-    display: flex;
-    flex-direction: row;
-  }
-
-.neon-item {
-    padding: 10px;
-    max-width: 20%;
+  font-family: nos;
+  src: url(Suicide\ Squad\ Font.ttf);
 }
-  .home {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.54%, rgba(0, 0, 0, 0.95) 100%),
+@font-face {
+  font-family: nos2;
+  src: url(TsukimiRounded-Regular.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300&display=swap");
+
+.home_container {
+  background-image: url("image/Grafitti.png");
+  background-size: cover;
+  background-position: center -100vh;
+}
+
+.home_header {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 63.54%,
+      rgba(0, 0, 0, 0.95) 100%
+    ),
     url("image/petir.png");
   background-repeat: no-repeat;
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  z-index: -0.5;
+  background-size: cover;
+  background-position: center center;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home_title {
+  width: 80%;
+}
+.home_houses {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.home_house_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.home_house_per {
+  width: 50%;
+}
+
+.house_img {
+  height: 100%;
+  width: 100%;
+}
+
+.home_storyline {
+  height: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  -webkit-background-size: cover;
-  /* -moz-background-size: cover; */
-  /* -o-background-size: cover; */
-  /* background-size: contain;
-  background-position: center center; */
-  }
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
 
-  .overlay-3 {
+.home_story_title_img {
+  width: 100%;
+}
+
+.home_story_container {
+  box-sizing: border-box;
+  mix-blend-mode: hard-light;
+  border-radius: 55px;
+  height: 100%;
+  box-shadow: 0 0 7.8px 11.4px #ffffff,
+    /* white border */ inset 0 0 7.8px 5.4px #ffffff,
+    /* white border inset */ 0 0 10.8px 14px #c882ff,
+    /* light-blue extends a bit from white */ inset 0 0 10.8px 15px #c882ff,
+    /* light-blue inset */ 0 0 80px 40px rgb(255, 133, 255),
+    /* large blue glow */ inset 0 0 40px 20px rgba(255, 133, 255, 0.8);
+  width: 90%;
+  padding: 40px;
+}
+
+.home_anthem {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.home_anthem_title_img {
+  width: 100%;
+}
+
+.home_anthem_container {
+  box-sizing: border-box;
+  mix-blend-mode: hard-light;
+  border-radius: 55px;
+  height: 100%;
+  box-shadow: 0 0 7.8px 11.4px #ffffff,
+    /* white border */ inset 0 0 7.8px 5.4px #ffffff,
+    /* white border inset */ 0 0 10.8px 14px #ff922d,
+    /* light-blue extends a bit from white */ inset 0 0 10.8px 15px #ff922d,
+    /* light-blue inset */ 0 0 80px 40px rgb(255, 163, 44),
+    /* large blue glow */ inset 0 0 40px 20px rgba(255, 163, 44, 0.8);
+  width: 90%;
+  padding: 40px;
+}
+
+.home_video_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.home_video {
+  width: 80%;
+  height: 100%;
+}
+
+.home_text {
+  font-family: nos;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .home_container {
+    background-position: center -50vh;
+  }
+  .home_title {
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
   }
-  
-  /* .overlay-3 > img {
-    font-family: 'Suicide Squad Font';
-font-style: normal;
-font-weight: 400;
-font-size: 196px;
-line-height: 225px;
-display: flex;
-align-items: center;
-text-align: center;
-
-border: 6.12917px solid #FFFFFF;
-filter: blur(2.04306px);
-  } */
+  .home_house_row {
+    flex-direction: column;
+  }
+  .home_house_per {
+    width: 100%;
+  }
+  .home_video_container {
+    height: 60vh;
+  }
+  .home_video {
+    height: 40%;
+  }
+  .home_text {
+    font-size: 15px;
+  }
+  .home_story_container {
+    padding: 25px;
+    box-shadow: 0 0 1.8px 3.4px #ffffff,
+      /* white border */ inset 0 0 1.8px 1.4px #ffffff,
+      /* white border inset */ 0 0 1.8px 1px #c882ff,
+      /* light-blue extends a bit from white */ inset 0 0 5.8px 8px #c882ff,
+      /* light-blue inset */ 0 0 40px 20px rgb(255, 133, 255),
+      /* large blue glow */ inset 0 0 40px 20px rgba(255, 133, 255, 0.8);
+  }
+  .home_anthem_container {
+    padding: 25px;
+    box-shadow: 0 0 1.8px 3.4px #ffffff,
+      /* white border */ inset 0 0 1.8px 1.4px #ffffff,
+      /* white border inset */ 0 0 1px 1px #ffa44e,
+      /* light-blue extends a bit from white */ inset 0 0 5px 8px #ffa44e,
+      /* light-blue inset */ 0 0 40px 20px rgb(255, 163, 44),
+      /* large blue glow */ inset 0 0 40px 20px rgba(255, 163, 44, 0.8);
+  }
+}
