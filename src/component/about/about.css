@@ -42,11 +42,11 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding: 100px;
 }
 
 .overlay-3 > img {
   width: 100%;
-  height: auto;
 }
 /* .text>img {
     margin-top: 5%;
@@ -94,6 +94,9 @@
 }
 
 @media (max-width: 768px) {
+  .overlay-3 {
+    padding: 0;
+  }
   .overlay-3 > img {
     width: 100%;
   }

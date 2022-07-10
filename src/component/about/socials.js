@@ -17,7 +17,7 @@ export default function about(props) {
             </a>
           </div>
           <div className="instagram">
-            <a href="https://www.instagram.com/pintugtd/?hl=en">
+            <a href="https://www.instagram.com/pintugtd/?hl=en" target="_blank">
               <img src={instagram} alt="" />
             </a>
           </div>

@@ -1,0 +1,26 @@
+.navbar-label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.navbar-logo {
+  height: 80%;
+}
+
+.navbar-tabs-background {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.079);
+  box-shadow: inset 54.1667px -54.1667px 54.1667px rgba(0, 0, 0, 0.079),
+    inset -54.1667px 54.1667px 54.1667px rgba(255, 255, 255, 0.079);
+  backdrop-filter: blur(60.8333px);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-label {
+    font-size: 18px;
+  }
+}
