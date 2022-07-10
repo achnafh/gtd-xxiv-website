@@ -626,6 +626,11 @@ const profileData = [
         major: "ACC/Year 2",
         photo: "/images/committee/BFM/jessica-elizabeth.jpg",
       },
+      {
+        name: "James Ryan",
+        major: "EEE/Year 2",
+        photo: "/images/committee/photo-not-found.png",
+      },
     ],
   },
 ];
