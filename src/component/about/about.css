@@ -47,7 +47,6 @@
 
 .overlay-3 > img {
   width: 100%;
-
 }
 /* .text>img {
     margin-top: 5%;
@@ -95,6 +94,9 @@
 }
 
 @media (max-width: 768px) {
+  .overlay-3 {
+    padding: 0;
+  }
   .overlay-3 > img {
     width: 100%;
   }
