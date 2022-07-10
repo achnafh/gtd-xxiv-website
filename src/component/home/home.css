@@ -47,6 +47,33 @@
 
 .home_house_per {
   width: 50%;
+  position: relative;
+}
+
+.home_house_per_hover {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.home_house_per:hover .home_house_per_hover {
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.home_house_per_hover_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .house_img {
@@ -142,6 +169,7 @@
   .home_house_per {
     width: 100%;
   }
+
   .home_video_container {
     height: 60vh;
   }

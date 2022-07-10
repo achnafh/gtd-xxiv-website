@@ -11,17 +11,37 @@ export default function Logos() {
       <div className="home_house_row">
         <div className="home_house_per">
           <img src={neonBlue} className="house_img" />
+          <div className="home_house_per_hover">
+            <div className="home_house_per_hover_content">
+              <p className="home_text">Harley Quinn</p>
+            </div>
+          </div>
         </div>
         <div className="home_house_per">
           <img src={neonYellow} className="house_img" />
+          <div className="home_house_per_hover">
+            <div className="home_house_per_hover_content">
+              <p className="home_text">Reversed Flash</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="home_house_row">
         <div className="home_house_per">
           <img src={neonGreen} className="house_img" />
+          <div className="home_house_per_hover">
+            <div className="home_house_per_hover_content">
+              <p className="home_text">Poison Ivy</p>
+            </div>
+          </div>
         </div>
         <div className="home_house_per">
           <img src={neonRed} className="house_img" />
+          <div className="home_house_per_hover">
+            <div className="home_house_per_hover_content">
+              <p className="home_text">Peacemaker</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
