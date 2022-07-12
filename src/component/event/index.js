@@ -4,9 +4,14 @@ import Header from "./Header.js";
 import Card from "./card.js";
 import content from "./content.js";
 
-function createEntry(cardValue) {
+function createEntry(cardValue, idx) {
   return (
-    <Card id={cardValue.id} days={cardValue.days} const={cardValue.content} />
+    <Card
+      id={cardValue.id}
+      idx={idx}
+      days={cardValue.days}
+      const={cardValue.content}
+    />
   );
 }
 

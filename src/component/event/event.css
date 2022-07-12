@@ -109,27 +109,25 @@
 }
 
 .imageday {
-  margin-top: 0%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: -5%;
   width: 35%;
 }
 
 .content-event {
   display: flex;
   flex-direction: column;
-  padding-inline: 5%;
 }
 
 .content-event-card {
   display: flex;
   flex-direction: row;
+  padding: 2%;
+  padding-inline: 5%;
 }
 
 .content-event img {
   height: auto;
-  max-width: 100%;
+  max-width: 30%;
   /* margin-left: 2%;
     margin-right: 2%; */
 }
@@ -168,6 +166,7 @@
   }
   .content-event img {
     overflow: auto;
+    max-width: 100%;
   }
 
   .imageday {
