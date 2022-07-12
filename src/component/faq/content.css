@@ -114,11 +114,6 @@
   padding-right: 20px;
 }
 
-.faq-box-scroll-container {
-  max-height: 790px;
-  overflow-y: scroll;
-}
-
 .faq-box Button {
   height: auto;
 
@@ -321,6 +316,11 @@
   }
 
   .faq-box .triangle {
+    width: 40%;
+    height: auto;
+  }
+
+  .faq-box .triangle-active {
     width: 40%;
     height: auto;
   }
