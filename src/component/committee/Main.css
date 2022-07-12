@@ -1,29 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap");
 @import url("./Titles.css");
 @import url("./Slider.css");
 @import url("./Cards.css");
 @import url("./Tops.css");
 
 @font-face {
-  font-family: 'suicide-squad';
-  src: url('/public/fonts/suicide-squad.ttf');
+  font-family: "suicide-squad";
+  src: url("/public/fonts/suicide-squad.ttf");
   font-weight: 400;
 }
 
 * {
-  margin : 0;
-  padding : 0;
-  font-family: 'suicide-squad';
-
+  margin: 0;
+  padding: 0;
+  font-family: "suicide-squad";
 }
 
 h1 {
-  font-family: 'suicide-squad';
+  font-family: "suicide-squad";
   font-size: 60px;
   color: red;
   font-weight: 400;
 }
-
 
 body {
   max-width: 100vw;
@@ -32,25 +30,22 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 .committee {
   max-width: 900px;
   height: auto;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 5%;
 }
-
-
-
 
 /* Responsive for Mobile */
-@media only screen and (max-width: 800px){
-  html{
-    overflow-x:hidden;
+@media only screen and (max-width: 800px) {
+  .committee {
+    margin-top: 20%;
+  }
+  html {
+    overflow-x: hidden;
   }
 }
-
-
-

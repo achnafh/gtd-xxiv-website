@@ -2,81 +2,78 @@
 /*base styles*/
 
 @font-face {
-    font-family: Suicide Squad Font;
-    src: url('./font/SuicideSquadFont-v5jA.ttf');
+  font-family: Suicide Squad Font;
+  src: url("./font/SuicideSquadFont-v5jA.ttf");
 }
 
-main{
-    position: static;
+main {
+  position: static;
 
-    height: auto;
+  height: auto;
 
-    background-image: url("./img/suicide-squad-typography-hd 2.png");
-    background-position: center;
-    background-size: 100% auto;
+  background-image: url("./img/suicide-squad-typography-hd 2.png");
+  background-position: center;
+  background-size: 100% auto;
 }
 
-#faq-text{
-    position: relative;
-    display: block;
+#faq-text {
+  position: relative;
+  display: block;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 
-    width: 600px;
+  width: 600px;
+  object-fit: none;
+}
+
+@media screen and (max-width: 1550px) {
+  #faq-text {
+    transform: scale(0.88);
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  #faq-text {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  #faq-text {
+    width: 500px;
     object-fit: none;
-}
-
-@media screen and (max-width: 1550px){
-    #faq-text{
-        transform: scale(0.88);
-    }
-}
-
-@media screen and (max-width: 1380px){
-    #faq-text{
-        transform: scale(0.8);
-    }
-}
-
-@media screen and (max-width: 1110px){
-    #faq-text{
-        width: 500px;
-        object-fit: none;
-    }
+  }
 }
 
 @media screen and (max-width: 840px) {
-    #faq-text{
-        width: 400px;
-    }
+  #faq-text {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 730px) {
-    #faq-text{
-        transform: scale(0.66);
-    }
+  #faq-text {
+    transform: scale(0.66);
+  }
+  main {
+    margin-top: 5%;
+  }
 }
 
 @media screen and (max-width: 420px) {
-    #faq-text{
-        width: 370px;
-        object-fit: cover;
-        margin-top: 0;
-        top: -20px;
-
-    }
+  #faq-text {
+    width: 370px;
+    object-fit: cover;
+    margin-top: 0;
+    top: -20px;
+  }
 }
 @media screen and (max-width: 370px) {
-    #faq-text{
-        width: 320px;
-        object-fit: cover;
-    }
+  #faq-text {
+    width: 320px;
+    object-fit: cover;
+  }
 }
-
-
-
-
-
