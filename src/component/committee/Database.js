@@ -6,32 +6,32 @@ const profileData = [
       {
         name: "Jason Nicholas",
         major: "CBE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PO/Jason Nicholas (edited).jpg",
       },
       {
         name: "Andrew Tatang",
         major: "EEE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PO/Andrew Tatang (edited).jpg",
       },
       {
         name: "Verena Karina",
         major: "BIE/Year 2",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PO/Verena Karina (edited).jpg",
       },
       {
         name: "Wesley Susanto",
         major: "IEM/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PO/Wesley Susanto (edited).jpg",
       },
       {
         name: "Vanessa Christy",
         major: "IEM/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PO/Vanessa Christy Chandra (edited).jpg",
       },
       {
         name: "Jonathan Kelvin",
         major: "EEE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PO/Jonathan Kelvin Santoso (edited).jpg",
       },
     ],
     subcomm: [
@@ -135,17 +135,17 @@ const profileData = [
       {
         name: "Bryan Christopher",
         major: "MAS/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/LOGS/Bryan Christopher (edited).jpg",
       },
       {
         name: "Niko Kristanto",
         major: "IEM/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/LOGS/Niko Kristanto (edited).jpg",
       },
       {
         name: "Alvin Putera",
         major: "EEE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/LOGS/Alvin Putera Budiman (edited).jpg",
       },
     ],
     subcomm: [
@@ -238,22 +238,22 @@ const profileData = [
       {
         name: "Daren Nathaniel",
         major: "CSC/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PPIT/Daren Nathaniel Janto (edited).jpg",
       },
       {
         name: "Sylvia Deborah",
         major: "EEE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PPIT/Sylvia Deborah (edited).jpg",
       },
       {
         name: "Rivaldo Billy",
         major: "MAS/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PPIT/Rivaldo Billy Sebastian (edited).jpg",
       },
       {
         name: "Edward Steven",
         major: "EEE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/PPIT/Edward Steven Wongso (edited).jpg",
       },
     ],
     subcomm: [
@@ -356,22 +356,22 @@ const profileData = [
       {
         name: "Kathy Sophia",
         major: "BIE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/WELF/Kathy Sophia (edited).jpg",
       },
       {
         name: "Fernando",
         major: "EESS/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/WELF/Fernando (edited).jpg",
       },
       {
         name: "Stephen Edbert",
         major: "CEE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/WELF/Stephen Edbert (edited).jpg",
       },
       {
         name: "David Alexander",
         major: "NBS/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/WELF/David Alexander Yosal (edited).jpg",
       },
     ],
     subcomm: [
@@ -464,12 +464,12 @@ const profileData = [
       {
         name: "John Nicholas",
         major: "EEE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/GL/John Nicholas Suharjono (edited).jpg",
       },
       {
         name: "Jocelyn Valencia",
         major: "IEM/Year 2",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/GL/Jocelyn Valencia Yoswara (edited).jpg",
       },
     ],
     subcomm: [
@@ -562,22 +562,22 @@ const profileData = [
       {
         name: "Kenzhi Iskandar",
         major: "MAE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/BFM/Kenzhi Iskandar Wong (edited).jpg",
       },
       {
         name: "Ruby Clarissa",
         major: "BS/Year3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/BFM/Ruby Clarissa Sutopo (edited).jpg",
       },
       {
         name: "Leonard Darmawan",
         major: "CBE/Year 3",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/BFM/Leonard Darmawan (edited).jpg",
       },
       {
         name: "Vony Renfia",
         major: "NBS/Year 2",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/BFM/Vony Renfia (edited).jpg",
       },
     ],
     subcomm: [
@@ -629,7 +629,7 @@ const profileData = [
       {
         name: "James Ryan",
         major: "EEE/Year 2",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/BFM/james-ryan.jpg",
       },
     ],
   },
