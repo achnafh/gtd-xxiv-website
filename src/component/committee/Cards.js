@@ -18,7 +18,7 @@ const Cards = ({ position, slideIndex }) => {
           <div
             className="card"
             data-aos="fade-in"
-            data-aos-anchor-position="top-bottom"
+            data-aos-anchor-position="center-bottom"
           >
             <img src={cardBG} alt="" />
             <div className="overlay-card"></div>
