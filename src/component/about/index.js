@@ -21,12 +21,12 @@ function createEntry2(value) {
 
 export default function About(props) {
   return (
-    <>
+    <div className="general">
       <Header />
       <Content />
       <Socials />
       <Sponsor />
       {card.map(createEntry2)}
-    </>
+    </div>
   );
 }

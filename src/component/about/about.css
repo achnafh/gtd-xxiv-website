@@ -227,6 +227,12 @@
   opacity: 1;
 }
 @media (max-width: 768px) {
+  .socials {
+    margin-bottom: 20%;
+  }
+  .sponsor {
+    margin-bottom: 20%;
+  }
   .overlay-3 {
     padding: 0;
   }
