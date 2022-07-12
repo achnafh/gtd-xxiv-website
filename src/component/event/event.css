@@ -119,6 +119,7 @@
 .content-event {
   display: flex;
   flex-direction: column;
+  padding-inline: 5%;
 }
 
 .content-event-card {
