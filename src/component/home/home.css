@@ -135,6 +135,10 @@
     /* large blue glow */ inset 0 0 40px 20px rgba(255, 163, 44, 0.8);
   width: 90%;
   padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .home_video_container {
