@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import gtdlogo from "./images/gtdlogo.svg";
+import gtdlogo from "./images/Logo GTD Normal.png";
 import "./navbar.css";
 
 function BasicExample() {

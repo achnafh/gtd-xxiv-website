@@ -9,7 +9,7 @@ import {
   useTheme,
 } from "@mui/material";
 import DrawerComp from "./DrawerComp";
-import gtdlogo from "./images/gtdlogo.svg";
+import gtdlogo from "./images/Logo GTD Normal.png";
 import "./navbar.css";
 
 const LinkTab = (props) => {

@@ -13,7 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { makeStyles } from "@mui/material";
-import gtdlogo from "./images/gtdlogo.svg";
+import gtdlogo from "./images/Logo GTD Normal.png";
 
 const pages = [
   "HOME",
