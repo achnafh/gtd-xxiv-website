@@ -2,7 +2,7 @@ import React from "react";
 import "./about.css";
 export default function content(props) {
   return (
-    <div className="content-about">
+    <div className="content-about" data-aos="zoom-out">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

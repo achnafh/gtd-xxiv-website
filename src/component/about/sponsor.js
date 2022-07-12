@@ -5,7 +5,7 @@ export default function Sponsor(props) {
   return (
     <div className="sponsor">
       <h2>CHECK OUT OUR SPONSOR</h2>
-      <div class="fullwrap">
+      <div class="fullwrap" data-aos="zoom-out">
         <img src={sponsor} alt="" className="sponsor-image-img" />
         <a href="https://www.tanotofoundation.org/" target="_blank">
           <div class="fullcap">

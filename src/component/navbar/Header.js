@@ -35,7 +35,7 @@ const Header = () => {
       sx={{
         background: "rgba(0, 0, 0, 0.079)",
         boxShadow:
-          "inset 54.1667px -54.1667px 54.1667px rgba(0, 0, 0, 0.079), inset -54.1667px 54.1667px 54.1667px rgba(255, 255, 255, 0.079)",
+          "inset 100.1667px -100.1667px 100.1667px rgba(0, 0, 0, 0.079), inset -100.1667px 100.1667px 100.1667px rgba(255, 255, 255, 0.079)",
         backdropFilter: "blur(60.8333px)",
         maxHeight: "10vh",
       }}

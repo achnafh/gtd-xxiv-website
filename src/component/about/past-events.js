@@ -3,7 +3,10 @@ import "./about.css";
 
 export default function Past(props) {
   return (
-    <div className="past">
+    <div
+      className="past"
+      data-aos={props.id % 2 == 0 ? "fade-left" : "fade-right"}
+    >
       <h1>{props.title}</h1>
       <div class="fullwrap">
         <img class="past-image" src={props.image} alt="" />

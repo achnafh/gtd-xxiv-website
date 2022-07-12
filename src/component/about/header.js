@@ -3,7 +3,7 @@ import "./about.css";
 import image from "./image/Group.png";
 export default function Header(props) {
   return (
-    <div className="about-us">
+    <div className="about-us" data-aos="zoom-out">
       <div className="overlay-3">
         <img className="text" src={image} alt="" />
         <h2>

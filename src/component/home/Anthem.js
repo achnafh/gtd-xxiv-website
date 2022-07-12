@@ -7,7 +7,7 @@ export default function Anthem() {
       <div className="home_anthem_title">
         <img src={title} className="home_anthem_title_img"></img>
       </div>
-      <div className="home_anthem_container">
+      <div className="home_anthem_container" data-aos="fade-right">
         <p className="home_text">Verse</p>
         <p className="home_text">
           From different places, different times <br />

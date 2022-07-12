@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
 import Header from "./header.js";
 import Content from "./content.js";
@@ -20,6 +20,12 @@ function createEntry2(value) {
 }
 
 export default function About(props) {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="general">
       <Header />

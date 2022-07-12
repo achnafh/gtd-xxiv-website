@@ -9,6 +9,7 @@ const content = [
     days: Day0,
     content: [
       {
+        id: 0,
         image: Image,
         title: "OG Bonding Day",
         description:
@@ -21,12 +22,14 @@ const content = [
     days: Day1,
     content: [
       {
+        id: 1,
         image: Image,
         title: "Super GTD",
         description:
           "Taking inspiration from the famous TV Show Deal or No Deal, in this activity, participants within their own groups would play a series of bids, barters, and guessing games with the objective of having the most game cash at the end of the game.",
       },
       {
+        id: 2,
         image: Image,
         title: "Night Games",
         description:
@@ -39,6 +42,7 @@ const content = [
     days: Day2,
     content: [
       {
+        id: 3,
         image: Image,
         title: "Duel Games",
         description:
@@ -51,12 +55,14 @@ const content = [
     days: Day3,
     content: [
       {
+        id: 4,
         image: Image,
         title: "Outdoor Games",
         description:
           "Participants in groups of 5 would be playing station games which are dispersed into 4 venues in Singapore. The venues would be nature reserves or parks which are able to cater the number of participants we have without crowding and sticking to the safe management measures. The aim of this game would be to score as many points in every station. The best groups would be awarded in the Awards Night following this activity.",
       },
       {
+        id: 5,
         image: Image,
         title: "Awards Night",
         description:

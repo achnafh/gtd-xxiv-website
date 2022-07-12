@@ -3,7 +3,11 @@ import "./home.css";
 
 export default function Video(props) {
   return (
-    <div className="home_video_container">
+    <div
+      className="home_video_container"
+      data-aos="zoom-in"
+      data-aos-anchor-placement="center-bottom"
+    >
       <iframe
         src={props.url}
         title="video"

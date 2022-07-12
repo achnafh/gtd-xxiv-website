@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyCollapse from "./MyCollapse";
@@ -11,8 +11,11 @@ export default function FAQ(props) {
   const [fourthBoxOpen, setFourthBoxOpen] = useState(false);
   const [fifthBoxOpen, setFifthBoxOpen] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
-    <main>
+    <main data-aos="zoom-in">
       <img id="faq-text" src={faqText} alt="faq" />
 
       <div className="content-box">

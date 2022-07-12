@@ -15,7 +15,11 @@ const Cards = ({ position, slideIndex }) => {
     >
       <section className={`${position} active`}>
         {profileData[slideIndex - 1][`${position}`].map((person) => (
-          <div className="card">
+          <div
+            className="card"
+            data-aos="fade-in"
+            data-aos-anchor-position="top-bottom"
+          >
             <img src={cardBG} alt="" />
             <div className="overlay-card"></div>
             <div className="photo">

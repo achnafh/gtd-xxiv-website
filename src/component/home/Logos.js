@@ -9,7 +9,11 @@ export default function Logos() {
   return (
     <div className="home_houses">
       <div className="home_house_row">
-        <div className="home_house_per">
+        <div
+          className="home_house_per"
+          data-aos="fade-down-right"
+          data-aos-anchor-placement="center-bottom"
+        >
           <img src={neonBlue} className="house_img" />
           <div className="home_house_per_hover">
             <div className="home_house_per_hover_content">
@@ -17,7 +21,11 @@ export default function Logos() {
             </div>
           </div>
         </div>
-        <div className="home_house_per">
+        <div
+          className="home_house_per"
+          data-aos="fade-down-left"
+          data-aos-anchor-placement="center-bottom"
+        >
           <img src={neonYellow} className="house_img" />
           <div className="home_house_per_hover">
             <div className="home_house_per_hover_content">
@@ -27,7 +35,11 @@ export default function Logos() {
         </div>
       </div>
       <div className="home_house_row">
-        <div className="home_house_per">
+        <div
+          className="home_house_per"
+          data-aos="fade-up-right"
+          data-aos-anchor-placement="center-bottom"
+        >
           <img src={neonGreen} className="house_img" />
           <div className="home_house_per_hover">
             <div className="home_house_per_hover_content">
@@ -35,7 +47,11 @@ export default function Logos() {
             </div>
           </div>
         </div>
-        <div className="home_house_per">
+        <div
+          className="home_house_per"
+          data-aos="fade-up-left"
+          data-aos-anchor-placement="center-bottom"
+        >
           <img src={neonRed} className="house_img" />
           <div className="home_house_per_hover">
             <div className="home_house_per_hover_content">

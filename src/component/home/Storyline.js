@@ -7,7 +7,7 @@ export default function Storyline(props) {
       <div className="home_story_title">
         <img src={title} className="home_story_title_img"></img>
       </div>
-      <div className="home_story_container">
+      <div className="home_story_container" data-aos="fade-left">
         <p className="home_text">
           From different places, different times With a common goal in our mind
           We want to enjoy this moment while it last Have yo ever stopped and

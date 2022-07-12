@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // Components
 import Navbar from "./component/navbar";
@@ -14,6 +14,8 @@ import {
 
 // Misc
 import routes from "./routes";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function PrivateRoute({ children }) {
   const token = localStorage.getItem("token");
@@ -21,6 +23,15 @@ function PrivateRoute({ children }) {
 }
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    let scrollRef = 0;
+
+    window.addEventListener("scroll", function () {
+      // increase value up to 10, then refresh AOS
+      scrollRef <= 10 ? scrollRef++ : AOS.refresh();
+    });
+  }, []);
   return (
     <Router>
       <Navbar />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./event.css";
 import Header from "./Header.js";
 import Card from "./card.js";
@@ -16,6 +16,12 @@ function createEntry(cardValue, idx) {
 }
 
 export default function Event(props) {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Header />
