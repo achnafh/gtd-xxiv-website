@@ -5,7 +5,7 @@ export default function Past(props) {
   return (
     <div
       className="past"
-      data-aos={props.id % 2 == 0 ? "fade-left" : "fade-right"}
+      data-aos={props.id % 2 === 0 ? "fade-left" : "fade-right"}
       data-aos-anchor-placement="center-bottom"
     >
       <h1>{props.title}</h1>

@@ -4,26 +4,21 @@ export default function content(props) {
   return (
     <div className="content-about" data-aos="zoom-out">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad.
+        Get Together Day (GTD) is a PINTU initiative made to welcome incoming
+        freshman students from Indonesia. It is a non-profit annual orientation
+        camp designed to introduce them to the warm, welcoming, and friendly
+        atmosphere of our community. We aim to ease their transition to living
+        in Singapore and its wonderful culture, as well as forge new bonds among
+        both the freshman and senior students.
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad.
+        The Get Together Day is a 4-day event to welcome new Indonesian
+        university students. It is held annually before the start of the
+        academic year in early to mid August. First established in 1999, the Get
+        Together Day is an event in which most Indonesian students are gathered
+        to have fun and play games before the new semester comes about. There is
+        an estimate of 120 committee members in attendance each year, with the
+        addition of approximately 100 incoming freshmen.
       </p>
       <hr />
     </div>

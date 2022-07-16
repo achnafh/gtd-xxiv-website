@@ -4,7 +4,7 @@ import "./event.css";
 export default function card(props) {
   return (
     <div className="bigimage2">
-      {props.idx == 0 ? (
+      {props.idx === 0 ? (
         <img
           className="imageday"
           src={props.days}
@@ -16,7 +16,7 @@ export default function card(props) {
       )}
       <div className="content-event">
         {props.const.map((data) =>
-          data.id % 2 == 0 ? (
+          data.id % 2 === 0 ? (
             <div
               className="content-event-card"
               data-aos="fade-left"
