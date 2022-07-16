@@ -39,7 +39,7 @@ export default function Logos() {
           <div className="home_house_per_hover">
             <div className="home_house_per_hover_content">
               <p className="home_text">
-                Reversed Flash
+                Reverse-Flash
                 <br />
                 an ex-professor who turned into a criminal after a bitter
                 rejection from the scientific community regarding his claims
