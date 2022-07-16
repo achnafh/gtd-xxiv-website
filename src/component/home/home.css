@@ -156,8 +156,9 @@
 .home_text {
   font-family: nos;
   color: white;
-  font-size: 40px;
+  font-size: 27px;
   text-align: center;
+  padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -200,5 +201,8 @@
       /* light-blue extends a bit from white */ inset 0 0 5px 8px #ffa44e,
       /* light-blue inset */ 0 0 40px 20px rgb(255, 163, 44),
       /* large blue glow */ inset 0 0 40px 20px rgba(255, 163, 44, 0.8);
+  }
+  .home_house_per_hover {
+    border-radius: 40px;
   }
 }
