@@ -15,7 +15,7 @@ const content = [
     id: 1,
     title: "",
     image: GTD1,
-    flip: "Fun-filled weekend with seniors from NTU and a chance to get to know other freshies! It is also the first GTD to be done under covid regulations",
+    flip: "Fun-filled weekend with seniors from NTU and a chance to get to know other freshies! It is also the first GTD to be done under COVID-19 regulations.",
     name: "GTD XXII: INSURGIO",
   },
   {

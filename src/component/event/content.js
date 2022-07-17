@@ -17,7 +17,7 @@ const content = [
       {
         id: 0,
         image: OG,
-        title: "OG Bonding Day",
+        title: "OG Bonding Day (18:00 SGT - End)",
         description:
           "Participants are introduced to their fellow groupmates and group leaders. Bonding sessions will be conducted as led by respective group leaders to ignite unity that they will carry forward.",
       },
@@ -30,14 +30,14 @@ const content = [
       {
         id: 1,
         image: Super,
-        title: "Super GTD",
+        title: "Super GTD (13:00 SGT - 17:30 SGT)",
         description:
           "Taking inspiration from the famous TV Show Deal or No Deal, in this activity, participants within their own groups would play a series of bids, barters, and guessing games with the objective of having the most game cash at the end of the game.",
       },
       {
         id: 2,
         image: Night,
-        title: "Night Games",
+        title: "Night Games (19:00 SGT - 23:00 SGT)",
         description:
           "Participants would be invited to become detectives, solving riddles which would bring them to game stations located in NTU. The horror-themed games bond the newly formed groups of freshmen and seniors, introducing them to places in NTU and its hidden gems.",
       },
@@ -50,7 +50,7 @@ const content = [
       {
         id: 3,
         image: Duel,
-        title: "Duel Games",
+        title: "Duel Games (13:00 SGT - 18:30 SGT)",
         description:
           "Using a tournament format, participants would be competing in orientation groups to conquer other orientation groups through partaking in duel games. Each orientation group will have to defeat the opposing group with the aim of getting the top ranks in this game. The top ranks of this game would then be given awards during the awards night on the last day.",
       },
@@ -63,14 +63,14 @@ const content = [
       {
         id: 4,
         image: Outdoor,
-        title: "Outdoor Games",
+        title: "Outdoor Games (13:00 SGT - 18:00 SGT)",
         description:
           "Participants in groups of 5 would be playing station games which are dispersed into 4 venues in Singapore. The venues would be nature reserves or parks which are able to cater the number of participants we have without crowding and sticking to the safe management measures. The aim of this game would be to score as many points in every station. The best groups would be awarded in the Awards Night following this activity.",
       },
       {
         id: 5,
         image: Awards,
-        title: "Awards Night",
+        title: "Awards Night (19:00 SGT - 23:00 SGT)",
         description:
           "This serves as the peak of Get Together Day and acts as the start of everlasting friendships formed during the event. Outstanding groups would be given awards to recognise their efforts in partaking and having worked well together within their groups. Awards Night is planned to be held at SCAPE The TreeTop. Performances by the orientation groups and the committee would be showcased during this time.",
       },

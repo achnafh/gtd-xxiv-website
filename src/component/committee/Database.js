@@ -111,18 +111,18 @@ const profileData = [
         photo: "/images/committee/PO/billy.jpg",
       },
       {
-        name: "Daniel RC",
+        name: "Daniel Rahmatcipta",
         major: "CEE/Year 3",
         photo: "/images/committee/PO/daniel-rahmat-cipta.jpg",
       },
       {
         name: "Veincent Yap",
-        major: "Bio Sci/Year 2",
+        major: "SBS/Year 2",
         photo: "/images/committee/PO/veincent-yap.jpg",
       },
       {
         name: "Stephanie Janong",
-        major: "MSE/Year 2",
+        major: "MSE/Year 3",
         photo: "/images/committee/PO/stephanie-janong.jpg",
       },
     ],
@@ -161,7 +161,7 @@ const profileData = [
       },
       {
         name: "Hans Aldi",
-        major: "EEE/Year 2",
+        major: "EEE/Year 4",
         photo: "/images/committee/LOGS/Hans-Aldi.jpg",
       },
       {
@@ -192,7 +192,7 @@ const profileData = [
       {
         name: "Aufar Thoriq",
         major: "EEE/Year 4",
-        photo: "/images/committee/photo-not-found.png",
+        photo: "/images/committee/LOGS/Thoriq (edited).jpg",
       },
       {
         name: "Bernard Lesley",
@@ -206,7 +206,7 @@ const profileData = [
       },
       {
         name: "Evan Theodore",
-        major: "BUS/Year 2",
+        major: "NBS/Year 2",
         photo: "/images/committee/LOGS/Evan.jpg",
       },
       {
@@ -273,7 +273,7 @@ const profileData = [
         photo: "/images/committee/PPIT/kennard.jpg",
       },
       {
-        name: "Achnaf H",
+        name: "Achnaf Habibullah",
         major: "MAE/Year 2",
         photo: "/images/committee/PPIT/achnaf.png",
       },
@@ -288,7 +288,7 @@ const profileData = [
         photo: "/images/committee/PPIT/joanne-christine.jpg",
       },
       {
-        name: "Hendrick S",
+        name: "Hendrick Sebastian",
         major: "EEE/Year 4",
         photo: "/images/committee/PPIT/hendrick.jpg",
       },
@@ -386,7 +386,7 @@ const profileData = [
         photo: "/images/committee/WELF/Frederik-Hanson.jpg",
       },
       {
-        name: "Naufal Ragitya D",
+        name: "Naufal Ragitya",
         major: "MSE/Year 3",
         photo: "/images/committee/WELF/Naufal.jpg",
       },
@@ -468,7 +468,7 @@ const profileData = [
       },
       {
         name: "Jocelyn Valencia",
-        major: "IEM/Year 2",
+        major: "IEM/Year 3",
         photo: "/images/committee/GL/Jocelyn Valencia Yoswara (edited).jpg",
       },
     ],
@@ -480,7 +480,7 @@ const profileData = [
       },
       {
         name: "Annisa Sarasvati",
-        major: "MSE/Year 2",
+        major: "MAE/Year 2",
         photo: "/images/committee/GL/Annisa.jpg",
       },
       {
@@ -505,12 +505,12 @@ const profileData = [
       },
       {
         name: "Kristian Achwan",
-        major: "MATH/Year 2",
+        major: "MAS/Year 2",
         photo: "/images/committee/GL/Kristian-Achwan.jpg",
       },
       {
         name: "Joanne Hendratno",
-        major: "ACC/Year 2",
+        major: "NBS/Year 2",
         photo: "/images/committee/GL/Joanne-Hendratno.jpg",
       },
       {
@@ -520,7 +520,7 @@ const profileData = [
       },
       {
         name: "Christine Theresia",
-        major: "ACC/Year 2",
+        major: "NBS/Year 2",
         photo: "/images/committee/GL/Christine-Theresia.jpg",
       },
       {
@@ -544,7 +544,7 @@ const profileData = [
         photo: "/images/committee/GL/Joanna-Chen.jpg",
       },
       {
-        name: "Theresia Laura",
+        name: "Theresa Laura",
         major: "NBS/Year 2",
         photo: "/images/committee/GL/Theresa-Laura.jpg",
       },
@@ -566,7 +566,7 @@ const profileData = [
       },
       {
         name: "Ruby Clarissa",
-        major: "BS/Year3",
+        major: "SBS/Year 3",
         photo: "/images/committee/BFM/Ruby Clarissa Sutopo (edited).jpg",
       },
       {
@@ -623,7 +623,7 @@ const profileData = [
       },
       {
         name: "Jessica Elizabeth",
-        major: "ACC/Year 2",
+        major: "NBS/Year 2",
         photo: "/images/committee/BFM/jessica-elizabeth.jpg",
       },
       {

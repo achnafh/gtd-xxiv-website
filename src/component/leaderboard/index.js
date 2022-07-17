@@ -37,7 +37,7 @@ export default function Leaderboard(props) {
             <tr>
               <th className="no">NO</th>
               <th className="team">TEAM</th>
-              <th>HOuSE</th>
+              <th>FACTIONS</th>
               <th>POINTS</th>
             </tr>
             {OG_row(data)}

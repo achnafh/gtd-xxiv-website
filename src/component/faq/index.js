@@ -45,9 +45,8 @@ export default function FAQ(props) {
                 open={firstBoxOpen}
                 setOpen={setFirstBoxOpen}
                 buttonText="1.	Apa itu Get Together Day XXIV?"
-                collapseText="Get Together Day (GTD) XXIV adalah acara orientasi tahunan yang diadakan tanggal 5-8 Agustus 2022 oleh Pelajar Indonesia NTU (PINTU) untuk menyambut mahasiswa-mahasiswi baru yang akan kuliah di NTU untuk 3-4 tahun kedepan.
-                Sesuai dengan aturan pemerintah Singapura, GTD akan kembali dilaksanakan secara physical/face-to-face. Apa yang kalian tunggu? Jangan sampai kehilangan kesempatan untuk berkenalan dengan sesama freshie dan senior-senior PINTU ya! Ayok daftar langsung disini
-                "
+                collapseText="Get Together Day (GTD) XXIV adalah acara orientasi tahunan yang diadakan tanggal 6-8 Agustus 2022 oleh Pelajar Indonesia NTU (PINTU) untuk menyambut mahasiswa-mahasiswi baru yang akan kuliah di NTU untuk 3-4 tahun kedepan.
+                Sesuai dengan aturan pemerintah Singapura, GTD akan kembali dilaksanakan secara physical/face-to-face. Apa yang kalian tunggu? Jangan sampai kehilangan kesempatan untuk berkenalan dengan sesama freshie dan senior-senior PINTU ya! Ayok daftar langsung di <a href='https://tinyurl.com/PendaftaranGTDXXIV' target='_blank' className='collapse-text-general-a'>sini!</a>"
               />
 
               <MyCollapse
@@ -68,7 +67,7 @@ export default function FAQ(props) {
                 open={fourthBoxOpen}
                 setOpen={setFourthBoxOpen}
                 buttonText="4.	 Berapa biaya pendaftaran untuk ikut acara GTD?"
-                collapseText="GTD akan mengenakan biaya pendaftaran sejumlah $20. Dengan harga $20, teman-teman akan mendapatkan baju orientasi khas GTD XXIV, makan malam di acara Awards Night, transportasi PP ke tempat Awards Night, dan juga pengalaman orientasi yang tidak akan terlupakan!"
+                collapseText="GTD akan mengenakan biaya pendaftaran sejumlah $20. Dengan harga $20, teman-teman akan mendapatkan baju orientasi khas GTD XXIV, makan malam di acara Awards Night, transportasi pulang pergi ke tempat Awards Night, kesempatan mendapatkan door prize, dan juga pengalaman orientasi yang tidak akan terlupakan!"
               />
 
               <MyCollapse

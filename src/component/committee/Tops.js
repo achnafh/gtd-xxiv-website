@@ -14,7 +14,7 @@ const Tops = () => {
       id: 1,
     },
     {
-      name: "Andrew Wira",
+      name: "Andrew Wiraatmaja",
       major: "DSAI/Year 4",
       portfol: "VP PO-LOGS",
       image: "/images/committee/TOPS/Andrew Wiraatmaja (edited).jpg",

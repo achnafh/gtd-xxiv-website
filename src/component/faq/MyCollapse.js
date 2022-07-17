@@ -1,5 +1,6 @@
 import { Button, Collapse } from "react-bootstrap";
 import triangle from "./img/triangle.png";
+import Parser from "html-react-parser";
 
 const MyCollapse = ({ open, setOpen, buttonText, collapseText }) => {
   return (
@@ -32,7 +33,7 @@ const MyCollapse = ({ open, setOpen, buttonText, collapseText }) => {
 
       <Collapse in={open}>
         <div id="collapse-text-one" className="collapse-text-general">
-          {collapseText}
+          {Parser(collapseText)}
         </div>
       </Collapse>
     </>

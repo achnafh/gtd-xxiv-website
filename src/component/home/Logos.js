@@ -18,7 +18,8 @@ export default function Logos() {
           <div className="home_house_per_hover">
             <div className="home_house_per_hover_content">
               <p className="home_text">
-                Harley Quinn
+                Birds of Prey
+                <br />
                 <br />A former psychiatric intern who was fascinated in learning
                 the psychology of asylum people. After having an abusive affair
                 with a manipulative inmate, Harley Quinn were left in
@@ -39,7 +40,8 @@ export default function Logos() {
           <div className="home_house_per_hover">
             <div className="home_house_per_hover_content">
               <p className="home_text">
-                Reverse-Flash
+                Injustice Society
+                <br />
                 <br />
                 an ex-professor who turned into a criminal after a bitter
                 rejection from the scientific community regarding his claims
@@ -63,7 +65,8 @@ export default function Logos() {
           <div className="home_house_per_hover">
             <div className="home_house_per_hover_content">
               <p className="home_text">
-                Poison Ivy
+                Bewitched Treants
+                <br />
                 <br />A former PhD graduate and was once a world-renowned
                 botanist. However, her dark past left her being an intoxicated
                 victim of a brutal experiment conducted by one of her close
@@ -83,7 +86,8 @@ export default function Logos() {
           <div className="home_house_per_hover">
             <div className="home_house_per_hover_content">
               <p className="home_text">
-                Peacemaker
+                Checkmate Shadow
+                <br />
                 <br />
                 the embodiment of peak human physical conditions. When the world
                 turned rogue, he started to lose his sense of justice and
