@@ -4,9 +4,7 @@ import title from "./image/Sub Header.png";
 export default function Storyline(props) {
   return (
     <div className="home_storyline">
-      <div className="home_story_title">
-        <img src={title} className="home_story_title_img"></img>
-      </div>
+      <img src={title} className="home_story_title_img"></img>
       <div className="home_story_container" data-aos="fade-left">
         <p className="home_text">
           After subduing the entire criminal underworld, Kingpin ruled with an

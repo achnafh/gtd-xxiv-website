@@ -3,11 +3,13 @@ import neonBlue from "./image/Neon Blue.png";
 import neonRed from "./image/Neon Red.png";
 import neonYellow from "./image/Neon Yellow.png";
 import neonGreen from "./image/Neon Green.png";
+import Factions from "./image/Factions.png";
 import "./home.css";
 
 export default function Logos() {
   return (
     <div className="home_houses">
+      <img src={Factions} className="home_story_title_img" />
       <div className="home_house_row">
         <div
           className="home_house_per"

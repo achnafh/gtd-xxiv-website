@@ -4,9 +4,7 @@ import title from "./image/Anthem.png";
 export default function Anthem() {
   return (
     <div className="home_anthem">
-      <div className="home_anthem_title">
-        <img src={title} className="home_anthem_title_img"></img>
-      </div>
+      <img src={title} className="home_anthem_title_img"></img>
       <div className="home_anthem_container" data-aos="fade-right">
         <p className="home_text">Verse</p>
         <p className="home_text">

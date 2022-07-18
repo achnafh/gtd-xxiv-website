@@ -109,13 +109,6 @@
     margin-top: 30px;
   }
 
-  .maincomm-title,
-  .subcomm-title {
-    overflow-x: hidden;
-    width: 100vw;
-    transform: translateX(20px);
-  }
-
   .portfol-title {
     width: 100vw;
     height: auto;
