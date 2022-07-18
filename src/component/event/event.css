@@ -8,6 +8,27 @@
   padding: 0px;
 }
 
+.event-text {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.event-text:hover {
+  color: rgb(73, 72, 72);
+  transition: 0.3s;
+}
+
+.event-text-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  margin-bottom: -5%;
+}
+
 .bigimage {
   background-image: url("image/background.png");
   background-repeat: no-repeat;
@@ -94,10 +115,6 @@
 }
 
 .bigimage2 {
-  background-image: url("image/hahaha.png");
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   font-family: nos;
