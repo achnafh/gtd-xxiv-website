@@ -17,7 +17,7 @@ export default function Home(props) {
       <Header />
       <div className="home_container">
         <Logos />
-        <Video url={"https://www.youtube.com/embed/M4gJUDFk2HA"} />
+        <Video url={"https://www.youtube.com/embed/bIaX8E-FCuk"} />
         <Storyline />
         <Anthem />
       </div>
