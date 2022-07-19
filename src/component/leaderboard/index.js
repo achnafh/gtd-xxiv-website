@@ -12,7 +12,7 @@ export default function Leaderboard(props) {
   const handleClose = () => setShowModal(false);
   const getData = async () => {
     try {
-      const res = await fetch("http://gtd-xxiv-website-backend.herokuapp.com/");
+      const res = await fetch("https://gtdxxiv-service.pintugtd.com/");
       const og_data = await res.json();
       og_data.sort((a, b) => (a.points > b.points ? -1 : 1));
       setLoading(true);

@@ -1,5 +1,5 @@
 import axios from "axios";
-const endpoint = "http://gtd-xxiv-website-backend.herokuapp.com";
+const endpoint = "https://gtdxxiv-service.pintugtd.com/";
 
 export const AxiosInit = () => {
   try {
