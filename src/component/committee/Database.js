@@ -305,7 +305,7 @@ const profileData = [
       {
         name: "Ricky Winarko",
         major: "IEM/Year 3",
-        photo: "/images/committee/PPIT/ricky.jpg",
+        photo: "/images/committee/PPIT/ricky.JPG",
       },
       {
         name: "Victor Lim",
