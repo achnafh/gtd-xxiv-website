@@ -145,6 +145,7 @@
 .content-event img {
   height: auto;
   max-width: 30%;
+  border-radius: 20px;
   /* margin-left: 2%;
     margin-right: 2%; */
 }
