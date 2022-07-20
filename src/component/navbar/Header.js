@@ -44,6 +44,7 @@ const Header = () => {
         {isMatch ? (
           <>
             <Tab
+              className="navbar-logo-button"
               icon={<img src={gtdlogo} className="navbar-logo" />}
               component={Link}
               to={"/"}

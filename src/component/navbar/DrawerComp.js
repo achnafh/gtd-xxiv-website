@@ -13,7 +13,13 @@ const DrawerComp = (props) => {
     setOpenDrawer(false);
   };
   return (
-    <React.Fragment>
+    <>
+      <IconButton
+        sx={{ color: "white" }}
+        onClick={() => setOpenDrawer(!openDrawer)}
+      >
+        <MenuIcon color="white" />
+      </IconButton>
       <Drawer
         anchor="right"
         open={openDrawer}
@@ -65,13 +71,7 @@ const DrawerComp = (props) => {
           />
         </Tabs>
       </Drawer>
-      <IconButton
-        sx={{ color: "white", marginLeft: "auto" }}
-        onClick={() => setOpenDrawer(!openDrawer)}
-      >
-        <MenuIcon color="white" />
-      </IconButton>
-    </React.Fragment>
+    </>
   );
 };
 
