@@ -22,7 +22,7 @@ export default function Anthem() {
           I'm sure I'm gonna miss <br />
           This special day when we get together <br />
           As clouds drift and seasons flee <br />
-          We will porbably not meet <br />
+          We will probably not meet <br />
           And different lives we'll lives <br />
           No once we'll forget this great day we have <br />
         </p>
