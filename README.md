@@ -1,3 +1,9 @@
+I was involved in a project to create a fully responsive website using React framework and I was in charge for the Committee component
+
+
+
+
+
 Initialize the repo:
 1. git clone https://github.com/GTD-IT-XXIV/gtd-xxiv-website.git
 2. go to cloned directory (gtd-xxiv-website)
